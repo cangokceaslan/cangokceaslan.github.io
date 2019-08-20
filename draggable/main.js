@@ -44,7 +44,8 @@ function dragElement(elmnt) {
 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
 var element = document.getElementById("mydivheader");
 function myFunction(event) {
-  //event.preventDefault();
+  var e = event || window.event;
+  e.preventDefault();
   var x = event.touches[0].clientX;
   var y = event.touches[0].clientY;
   //console.log(x);
@@ -55,7 +56,8 @@ function myFunction(event) {
   document.getElementById("mydiv").style.left = (element.offsetLeft - pos1) + "px";
 }
 function getter(event){
-  //event.preventDefault();
+  var e = event || window.event;
+  e.preventDefault();
   pos3 = event.touches[0].clientX - parseInt(document.getElementById("mydiv").style.left.split("px")[0]);
   pos4 = event.touches[0].clientY - parseInt(document.getElementById("mydiv").style.top.split("px")[0]);
   //console.log(pos3);
@@ -64,6 +66,8 @@ function getter(event){
   document.ontouchend = ender;
 }
 function ender(event){
+  var e = event || window.event;
+  e.preventDefault();
   //event.preventDefault();
   document.ontouchmove = null;
   document.ontouchend = null;
