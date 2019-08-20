@@ -68,4 +68,4 @@ function ender(event){
   document.ontouchmove = null;
   document.ontouchend = null;
 }
-document.getElementById("mydivheader").addEventListener("touchstart",getter,{passive:true});
+document.getElementById("mydivheader").addEventListener("touchstart",getter,{passive:false});
