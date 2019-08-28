@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -25,23 +25,30 @@
   
 
    
-    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" style="min-height:80px;" id="pb-navbar">
 
       <div class="container">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <a class="navbar-brand" href="index.html">Can Gokceaslan</a>
+        <a class="navbar-brand" href="index.html" style="font-weight:bold">Can Gokceaslan</a>
         <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
-          <ul class="navbar-nav">
+            <style>
+                #urls > li > a{
+                  font-weight:bold !important;
+                }
+              </style>
+          <ul class="navbar-nav" id="urls" style="margin-top:10px;">
+              <li class="nav-item" onclick="window.open(document.getElementById('github').href);"><a onclick="window.open(document.getElementById('github').href);" id="github" class="nav-link" href="https://github.com/cangokceaslan">Github</a></li>
+              <li class="nav-item" onclick="window.open(document.getElementById('youtube').href);"><a onclick="window.open(document.getElementById('youtube').href);" id="youtube" class="nav-link" href="https://youtube.com/cangokceaslan?sub_confirmation=1">Youtube</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="#section-home">Ana Sayfa</a></li> -->
             <li class="nav-item"><a class="nav-link" href="#section-about">Hakkımda</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-services">Servisler</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolyo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-resume">CV</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#section-contact">İletişim</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="#section-services">Servisler</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolyo</a></li> -->
+            <!-- <li class="nav-item"><a class="nav-link" href="#section-resume">CV</a></li> -->
+            <li class="nav-item"><a class="nav-link" href="#section-video">Videolar</a></li>
+            <li class="nav-item"><a class="nav-link" href="#section-footer">İletişim</a></li>
           </ul>
         </div>
       </div>
@@ -54,9 +61,9 @@
       <div class="container">
         <div class="row intro-text align-items-center justify-content-center">
           <div class="col-md-10 text-center">
-            <h1 class="site-heading site-animate" style="color:white; font-size: 100px;">Merhabalar ben <strong>Can Gökçeaslan</strong></h1>
-            <p class="lead site-subheading mb-4 site-animate">Yazılım ve Kodlama üzerine uzmanlaşmaya çalışan birisiyim. Şu anda freelancer olarak çalışmaktayım.</p>
-            <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3">Daha fazla bilgi için</a></p>
+            <h1 class="site-heading site-animate" style="color:white; font-size: 60px;">Merhabalar ben <strong>Can Gökçeaslan</strong></h1>
+            <p class="lead site-subheading mb-4 site-animate" style="color:white; font-size: 25px;">Yazılım ve Analiz Alanında Videolar Çekmekteyim. Aşağıdaki Butona Tıklayarak Abone Olabilirsiniz !</p>
+            <p><a href="#section-about" class="smoothscroll btn btn-primary px-4 py-3" style="max-width:50%;width:200px;padding:100px;height:100px;font-weight:bold;background:red;"><i class="fa fa-youtube-play fa-4x"></i></a></p>
           </div>
         </div>
       </div>
@@ -71,18 +78,20 @@
           </div>
           <div class="col-lg-5 pl-lg-5">
             <div class="section-heading">
-              <h2>About <strong>Me</strong></h2>
+              <h2>Ben <strong>Kimim?</strong></h2>
             </div>
-            <p class="lead">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p class="mb-5  ">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p class="lead"> Merhabalar, ben Can Gökçeaslan. Boğaziçi Üniversitesi Fizik Bölümü 2019 mezunuyum. Güncel olarak Yazılım alanında çalışmaktayım. HTML, CSS, JavaScript, Bootstrap, NodeJS, PHP, Python, Android Native (Java ile), React, Socket.io, ElectronJS, ExpressJS, Redux üzerinde aktif olarak çalışabilmekteyim. Bunun dışında React Native ve C++ üzerinde hala gelişmekteyim.</p>
+            <p class="mb-5  "> -- Eğer Elinizde Sorununuzu Çözmek İçin Herhangi Bir Araç Yoksa Sorununuzu Yaratıcılıkla Çözebilirsiniz.</p>
 
             <p>
-              <a href="#section-contact" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
-              <a href="#" class="btn btn-secondary px-4 py-2 btn-sm">Download CV</a>
+              <a href="./cv/Can_Gokceaslan_CV_TR.pdf" class="btn btn-primary px-4 py-2 btn-sm smoothscroll" style="font-weight:bold;">Türkçe CV</a>
+              <a href="./cv/Can_Gokceaslan_CV_EN.pdf" class="btn btn-secondary px-4 py-2 btn-sm" style="font-weight:bold;background-color:green;">English CV</a>
             </p>
           </div>
         </div>
-
+        </section>
+      <section class="site-section" id="section-skills" style="background:#f8f9fa!important;padding:0px;">
+        <div class="container">
         <div class="row pt-5">
           <div class="col-md-3 mb-3">
             <div class="section-heading">
@@ -91,55 +100,110 @@
           </div>
           <div class="col-md-9">
             <div class="skill">
-              <h3>Design</h3>
+              <h3>HTML</h3>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                   <span>85%</span>
                 </div>
               </div>
             </div>
-
             <div class="skill">
-              <h3>HTML5</h3>
+                <h3>CSS</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+            <div class="skill">
+              <h3>JS (DOM)</h3>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
-                  <span>98%</span>
+                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <span>90%</span>
                 </div>
               </div>
             </div>
-
             <div class="skill">
-              <h3>CSS3</h3>
+                <h3>Bootstrap</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                    <span>95%</span>
+                  </div>
+                </div>
+              </div>
+            <div class="skill">
+              <h3>NodeJS</h3>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
-                  <span>97%</span>
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  <span>80%</span>
                 </div>
               </div>
             </div>
-
+            <div class="skill">
+                <h3>PHP</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                    <span>90%</span>
+                  </div>
+                </div>
+              </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <span>75%</span>
+                  </div>
+                </div>
+              </div>
+            <div class="skill">
+                <h3>React</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                    <span>80%</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skill">
+                  <h3>Socket.io</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <span>100%</span>
+                    </div>
+                  </div>
+                </div>
+              <div class="skill">
+                  <h3>ElectronJS</h3>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                      <span>70%</span>
+                    </div>
+                  </div>
+                </div>
             <div class="skill">
               <h3>WordPress</h3>
               <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
-                  <span>88%</span>
+                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <span>85%</span>
                 </div>
               </div>
             </div>
-
             <div class="skill">
-              <h3>Bootstrap</h3>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-                  <span>92%</span>
+                <h3>React Native (Improving)</h3>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                    <span>60%</span>
+                  </div>
                 </div>
               </div>
-            </div>
           </div>
         </div>
       </div>
+      <br/>
+      <br/>
+    </div>
     </section>
 
-    <section class="site-section bg-light">
+   <!-- <section class="site-section bg-light">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md-12">
@@ -206,7 +270,7 @@
         </div>
       </div>
     </section>
-
+-->
 
     <section class="site-section border-top pb-0"  id="section-services">
       <div class="container">
@@ -214,7 +278,7 @@
         <div class="row mb-4">
           <div class="col-md-12">
             <div class="section-heading text-center">
-              <h2>My <strong>Services</strong></h2>
+              <h2>Sağladığım <strong>Servisler</strong></h2>
             </div>
           </div>
         </div>
@@ -225,28 +289,28 @@
               <span class="icon">
                 <span class="icon-phone3"></span>
               </span>
-              <h3 class="mb-4">Mobile Optimize</h3>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <h3 class="mb-4" style="font-weight:bold;">Responsive Tasarım</h3>
+              <p>Responsive Tasarım sayesinde Web projelerinizin Masaüstü tarayıcıların yanında Mobil ve Tablet tarayıcılarında da hızlı ve optimize şekilde çalışmasını sağlarız.</p>
+              <p><a href="#" class="site-link">Daha Fazla Bilgi Al <i class="icon-chevron-right"></i></a></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center mb-5">
+            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
+              <span class="icon">
+                <span class="fa fa-money fa-2x"></span>
+              </span>
+              <h3 class="mb-4" style="font-weight:bold;">Online Pazarlama</h3>
+              <p>Web ve Aplikasyon projeleriniz için SEO ayarlarınızı doğru bir şekilde yaparız ve Arama sonuçlarında olmanız gereken yere hızlıca gelebilirsiniz</p>
               <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 text-center mb-5">
             <div class="site-service-item site-animate" data-animate-effect="fadeIn">
               <span class="icon">
-                <span class="icon-wallet2"></span>
+                <span class="fa fa-lightbulb-o fa-2x"></span>
               </span>
-              <h3 class="mb-4">Increase Revenue</h3>
-              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-              <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4 text-center mb-5">
-            <div class="site-service-item site-animate" data-animate-effect="fadeIn">
-              <span class="icon">
-                <span class="icon-lightbulb"></span>
-              </span>
-              <h3 class="mb-4">Intuitive Idea</h3>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+              <h3 class="mb-4" style="font-weight:bold;">Yenilikçi Fikirler</h3>
+              <p>Sizin için üreteceğimiz hızlı ve yenilikçi fikirleri projenize dahil ederiz ve sizin rakipleriniz önünde her zaman daha fazla artı puan toplamanızı sağlarız.</p>
               <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
             </div>
           </div>
@@ -254,9 +318,9 @@
           <div class="col-md-6 col-lg-4 text-center mb-5">
             <div class="site-service-item site-animate" data-animate-effect="fadeIn">
               <span class="icon">
-                <span class="icon-phone3"></span>
+                <span style="padding-top:4px;" class="fa fa-desktop fa-2x"></span>
               </span>
-              <h3 class="mb-4">Mobile Optimize</h3>
+              <h3 class="mb-4" style="font-weight:bold;">Mobile Optimize</h3>
               <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
               <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
             </div>
@@ -264,9 +328,9 @@
           <div class="col-md-6 col-lg-4 text-center mb-5">
             <div class="site-service-item site-animate" data-animate-effect="fadeIn">
               <span class="icon">
-                <span class="icon-wallet2"></span>
+                <span class="fa fa-globe fa-2x"></span>
               </span>
-              <h3 class="mb-4">Increase Revenue</h3>
+              <h3 class="mb-4" style="font-weight:bold;">Increase Revenue</h3>
               <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
               <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
             </div>
@@ -274,9 +338,9 @@
           <div class="col-md-6 col-lg-4 text-center mb-5">
             <div class="site-service-item site-animate" data-animate-effect="fadeIn">
               <span class="icon">
-                <span class="icon-lightbulb"></span>
+                <span class="fa fa-rss fa-2x"></span>
               </span>
-              <h3 class="mb-4">Intuitive Idea</h3>
+              <h3 class="mb-4" style="font-weight:bold;">Intuitive Idea</h3>
               <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
               <p><a href="#" class="site-link">Learn More <i class="icon-chevron-right"></i></a></p>
             </div>
@@ -287,7 +351,7 @@
     </section>
 
 
-    <section class="site-section" id="section-features">
+    <!-- <section class="site-section" id="section-features">
       <div class="container">
         <div class="row site-section">
           <div class="col-md-8">
@@ -325,7 +389,8 @@
       </div>
     </section>
     
-
+-->
+<!--
     <section class="site-section" id="section-portfolio">
       <div class="container">
         <div class="row">
@@ -452,8 +517,9 @@
                     </div>
       </div>
     </section>
+    -->
     <!-- .section -->
-
+  <!--
     <section class="site-section bg-light " id="section-resume">
       <div class="container">
         <div class="row">
@@ -530,14 +596,16 @@
           </div>
         </div>
       </div>
-    </section> <!-- .section -->
-
-    <section class="site-section" id="section-blog">
+    </section> 
+    -->
+    <!-- .section -->
+  
+    <section class="site-section" id="section-video">
       <div class="container">
         <div class="row">
           <div class="col-md-12 mb-5">
             <div class="section-heading text-center">
-              <h2>Blog on <strong>Medium</strong></h2>
+              <h2>Youtube <strong> Videolar</strong></h2>
             </div>
           </div>
         </div>
@@ -545,7 +613,8 @@
         <div class="row">
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="blog-entry">
-              <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a>
+                <iframe width="350" height="195" src="https://www.youtube.com/embed/PuNsEKL1Zk0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!-- <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a> -->
               <div class="blog-entry-text">
                 <h3><a href="#">Creative Product Designer From Facebook</a></h3>
                 <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -560,7 +629,8 @@
           
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="blog-entry">
-              <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+                  <iframe width="350" height="195" src="https://www.youtube.com/embed/RLuchS2RX7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a> -->
               <div class="blog-entry-text">
                 <h3><a href="#">Creative Product Designer From Facebook</a></h3>
                 <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -575,7 +645,8 @@
 
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="blog-entry">
-              <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"></a>
+                <iframe width="350" height="195" src="https://www.youtube.com/embed/WYrHY4sxTnQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"> </a> -->
               <div class="blog-entry-text">
                 <h3><a href="#">Creative Product Designer From Facebook</a></h3>
                 <p class="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
@@ -591,82 +662,84 @@
         </div>
       </div>
     </section>
-
+<!--
     <section class="site-section bg-light" id="section-contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mb-5">
-            <div class="section-heading text-center">
-              <h2>Wanna <strong>Start Work</strong> With Me?</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 mb-5">
+              <div class="section-heading text-center">
+                <h2>Wanna <strong>Start Work</strong> With Me?</h2>
+              </div>
+            </div>
+            
+            <div class="col-md-7 mb-5 mb-md-0">
+              <form action="" class="site-form">
+                <h3 class="mb-5">Get In Touch</h3>
+                <div class="form-group">
+                  <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control px-3 py-4" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
+                </div>
+                <div class="form-group mb-5">
+                  <textarea class="form-control px-3 py-4" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+                </div>
+              </form>
+            </div>
+            <div class="col-md-5 pl-md-5">
+              <h3 class="mb-5">My Contact Details</h3>
+              <ul class="site-contact-details">
+                <li>
+                  <span class="text-uppercase">Email</span>
+                  site@gmail.com
+                </li>
+                <li>
+                  <span class="text-uppercase">Phone</span>
+                  +30 976 1382 9921
+                </li>
+                <li>
+                  <span class="text-uppercase">Fax</span>
+                  +30 976 1382 9922
+                </li>
+                <li>
+                  <span class="text-uppercase">Address</span>
+                  San Francisco, CA <br>
+                  4th Floor8 Lower  <br>
+                  San Francisco street, M1 50F
+                </li>
+              </ul>
             </div>
           </div>
-          
-          <div class="col-md-7 mb-5 mb-md-0">
-            <form action="" class="site-form">
-              <h3 class="mb-5">Get In Touch</h3>
-              <div class="form-group">
-                <input type="text" class="form-control px-3 py-4" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control px-3 py-4" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control px-3 py-4" placeholder="Your Phone">
-              </div>
-              <div class="form-group mb-5">
-                <textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
-              </div>
-            </form>
-          </div>
-          <div class="col-md-5 pl-md-5">
-            <h3 class="mb-5">My Contact Details</h3>
-            <ul class="site-contact-details">
-              <li>
-                <span class="text-uppercase">Email</span>
-                site@gmail.com
-              </li>
-              <li>
-                <span class="text-uppercase">Phone</span>
-                +30 976 1382 9921
-              </li>
-              <li>
-                <span class="text-uppercase">Fax</span>
-                +30 976 1382 9922
-              </li>
-              <li>
-                <span class="text-uppercase">Address</span>
-                San Francisco, CA <br>
-                4th Floor8 Lower  <br>
-                San Francisco street, M1 50F
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    -->
 
-
-    <footer class="site-footer">
+    <footer class="site-footer" id="section-footer">
       <div class="container">
         <div class="row mb-3">
           <div class="col-md-12 text-center">
             <p>
-              <a href="#" class="social-item"><span class="icon-facebook2"></span></a>
-              <a href="#" class="social-item"><span class="icon-twitter"></span></a>
-              <a href="#" class="social-item"><span class="icon-instagram2"></span></a>
-              <a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
-              <a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+              <a href="https://www.youtube.com/cangokceaslan?sub_confirmation=1" class="social-item" target="__blank"><span class="icon-youtube"></span></a>
+              <a href="https://www.facebook.com/cangokceaslan" class="social-item" target="__blank"><span class="icon-facebook2"></span></a>
+              <a href="https://www.twitter.com/cangokceaslan" class="social-item" target="__blank"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/cangokceaslan" class="social-item" target="__blank"><span class="icon-instagram2"></span></a>
+              <a href="https://www.linkedin.com/in/cangokceaslan" class="social-item" target="__blank"><span class="icon-linkedin2"></span></a>
+              <a href="https://www.github.com/cangokceaslan" class="social-item" target="__blank"><span class="icon-github"></span></a>
+              <a href="https://medium.com/@cangokceaslan" class="social-item" target="__blank"><span class="icon-blog"></span></a>
+              <a href="https://wa.me/905444850586" class="social-item" target="__blank"><span class="icon-whatsapp"></span></a>
+              
             </p>
           </div>
         </div>
         <div class="row">
             <p class="col-12 text-center">
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              &copy; Can Gökçeaslan <script>document.write(new Date().getFullYear());</script> Bütün Hakları Saklıdır
             </p>
         </div>
       </div>
