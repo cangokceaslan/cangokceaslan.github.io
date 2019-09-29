@@ -64,7 +64,12 @@
           </div>
           <div class="modal-footer">
             <button type="button" style="font-weight:bold;" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
-            <a type="button" href="https://www.youtube.com/watch?v=mpl1g7MxMeo" target="__blank" style="font-weight:bold;border-radius:30px;background-color:red;color:white;" class="btn btn-primary">Youtube'da İzle</a>
+            <button type="button" id="openyoutube" style="font-weight:bold;" class="btn btn-primary">Youtube'da İzle</button>
+            <script>
+              document.getElementById("openyoutube").onclick = function(){
+                  window.open('https://www.youtube.com/watch?v=mpl1g7MxMeo',"__blank");
+              };
+            </script>
           </div>
         </div>
       </div>
