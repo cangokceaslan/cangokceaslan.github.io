@@ -1,0 +1,80 @@
+---
+title: Buttons
+done: true
+---
+
+<div class="row">
+   <div class="col-md-6">
+      <div class="card">
+         <div class="card-body">
+            <h3 class="card-title">Buttons</h3>
+
+            <div class="btn-list">
+               {% for color in site.colors %}
+               {% assign c = color[0] %}
+               {% include ui/button.html text="Button" color=c %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-md-6">
+      <div class="card">
+         <div class="card-body">
+            <h3 class="card-title">Outlined buttons</h3>
+
+            <div class="btn-list">
+               {% for color in site.colors %}
+               {% assign c = color[0] %}
+               {% include ui/button.html text="Button" outline=true color=c %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-md-6">
+      <div class="card">
+         <div class="card-body">
+            <h3 class="card-title">Buttons with icons</h3>
+
+            <div class="btn-list">
+               {% for color in site.colors %}
+               {% assign c = color[0] %}
+               {% include ui/button.html text="Button" color=c icon="star" %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-md-6">
+      <div class="card">
+         <div class="card-body">
+            <h3 class="card-title">Outlined buttons with icons</h3>
+
+            <div class="btn-list">
+               {% for color in site.colors %}
+               {% assign c = color[0] %}
+               {% include ui/button.html text="Button" outline=true color=c icon-right="star" %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="col-md-6">
+      <div class="card">
+         <div class="card-body">
+            <h3 class="card-title">Social buttons</h3>
+
+            <div class="btn-list">
+               {% for social in site.socials %}
+               {% include ui/button.html text=social.title color=social.name icon=social.icon %}
+               {% endfor %}
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

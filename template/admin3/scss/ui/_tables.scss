@@ -1,0 +1,46 @@
+.table {
+  color: inherit;
+
+  thead {
+    th {
+      border-width: $table-border-width;
+      background: $min-black;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 11px;
+      letter-spacing: .03em;
+    }
+  }
+
+  th {
+    color: $text-muted;
+  }
+}
+
+.table-nowrap {
+  th, td {
+    white-space: nowrap;
+  }
+}
+
+
+.table-md {
+  th,
+  td {
+    padding: .5rem;
+  }
+}
+
+.table-vcenter {
+  td,
+  th {
+    vertical-align: middle;
+  }
+}
+
+.table-center {
+  td,
+  th {
+    text-align: center;
+  }
+}

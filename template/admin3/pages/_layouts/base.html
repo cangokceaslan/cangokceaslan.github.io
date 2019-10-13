@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en" {% if page.rtl %} dir="rtl" {% endif %}>
+<head>
+   <meta charset="utf-8"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+   <meta http-equiv="Content-Language" content="en"/>
+
+   <meta name="msapplication-TileColor" content="{{ site.colors.blue.hex }}"/>
+   <meta name="theme-color" content="{{ site.colors.blue.hex }}"/>
+
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+   <meta name="apple-mobile-web-app-capable" content="yes"/>
+   <meta name="mobile-web-app-capable" content="yes"/>
+   <meta name="HandheldFriendly" content="True"/>
+   <meta name="MobileOptimized" content="320"/>
+   <meta name="robots" content="noindex,nofollow,noarchive"/>
+
+   <link rel="icon" href="{{ site.base }}/favicon.ico" type="image/x-icon"/>
+   <link rel="shortcut icon" href="{{ site.base }}/favicon.ico" type="image/x-icon"/>
+
+   <title>{% if page.title %}{{ page.title }} - {% endif %}{% if layout.title %}{{ layout.title }} - {% endif %}{% if
+      site.title %}{{ site.title }} - {% endif %}{{ site.description }}</title>
+
+   {% if page.description %}
+   <meta name="description" content="{{ page.description | escape }}"/>
+   {% endif %}
+
+   {% include layout/css.html %}
+   {% include layout/og.html %}
+
+   <style>body { display: none; }</style>
+</head>
+<body
+   class="antialiased {% if page.dark-theme %} theme-dark{% endif %}{% if layout.body-class %} {{ layout.body-class }}{% endif %}{% if page.body-class %} {{ page.body-class }}{% endif %}">
+
+{{ content}}
+
+{% if site.debug %}
+{% if jekyll.environment == 'development' %}
+{% include layout/debug.html %}
+{% endif %}
+{% endif %}
+
+{% include layout/js.html %}
+<script>document.body.style.display = 'block';</script>
+</body>
+</html>

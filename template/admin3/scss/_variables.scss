@@ -1,0 +1,361 @@
+// FONTS
+$google-font: 'Nunito Sans' !default;
+
+$font-family-sans-serif: $google-font, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !default;
+$font-family-serif: "Georgia", "Times New Roman", times, serif !default;
+$font-icons: "tabler-webfont" !default;
+
+// EXTERNAL FONTS
+$icon-fonts: () !default;
+
+// COLORS
+$full-black: rgba(0, 0, 0, 1) !default;
+$full-white: rgba(255, 255, 255, 1) !default;
+$light-black: rgba(0, 0, 0, .4) !default;
+$light-white: rgba(255, 255, 255, .4) !default;
+$min-black: rgba(135, 150, 165, .032) !default;
+$min-white: rgba(255, 255, 255, .032) !default;
+
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$blue: #206bc4 !default;
+$azure: #45aaf2 !default;
+$indigo: #6574cd !default;
+$purple: #a55eea !default;
+$pink: #f66d9b !default;
+$red: #fa4654 !default;
+$orange: #ff922b !default;
+$yellow: #fcc419 !default;
+$lime: #7bd235 !default;
+$green: #5eba00 !default;
+$teal: #2bcbba !default;
+$cyan: #17a2b8 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+
+$light: #f5f7fb !default;
+$dark: #505061 !default;
+
+$body-bg: $light !default;
+$body-color: $dark !default;
+
+$text-muted: #8a91a5 !default;
+
+$border-color: #dce3e9 !default;
+
+$social-colors: (
+  "facebook": #3b5998,
+  "twitter": #1da1f2,
+  "google": #dc4e41,
+  "youtube": #ff0000,
+  "vimeo": #1ab7ea,
+  "dribbble": #ea4c89,
+  "github": #181717,
+  "instagram": #e4405f,
+  "pinterest": #bd081c,
+  "vk": #6383a8,
+  "rss": #ffa500,
+  "flickr": #0063dc,
+  "bitbucket": #0052cc,
+  "tabler": #206bc4
+) !default;
+
+$status-colors: (
+  "primary": $blue,
+  "secondary": $gray-600,
+  "success": $green,
+  "info": $cyan,
+  "warning": $yellow,
+  "danger": $red,
+  "dark": $dark,
+) !default;
+
+$colors: (
+  "blue": $blue,
+  "azure": $azure,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "lime": $lime,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+  "dark": $dark
+) !default;
+
+$avatar-sizes: (
+  "sm": 1.25rem,
+  "md": 3rem,
+  "lg": 4.5rem,
+  "xl": 6rem
+) !default;
+
+//Fonts
+$font-size-base: 1rem !default;
+$font-weight-base: 400 !default;
+$line-height-base: 1.5 !default;
+$body-letter-spacing: -.01em !default;
+
+$border-radius: 3px !default;
+
+//Typography
+$headings-color: #021f34 !default;
+$headings-font-weight: 600 !default;
+
+$small-font-size: 87.5% !default;
+
+$h1-font-size: (23em/15) !default;
+$h2-font-size: (21em/15) !default;
+$h3-font-size: (19em/15) !default;
+$h4-font-size: (17em/15) !default;
+$h5-font-size: (15em/15) !default;
+$h6-font-size: (13em/15) !default;
+$h7-font-size: (11em/15) !default;
+
+$blockquote-font-size: $h4-font-size !default;
+
+$lead-font-size: $h4-font-size !default;
+$lead-font-weight: 400 !default;
+
+$hr-opacity: .1 !default;
+$hr-margin-y: 1rem !default;
+
+//Sizing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.25,
+  5: $spacer * 1.5,
+  6: $spacer * 3,
+  7: $spacer * 6,
+  8: $spacer * 9,
+  9: $spacer * 12,
+) !default;
+
+$size-spacers: (
+  auto: auto,
+  px: 1px,
+  full: 100%
+) !default;
+
+
+$sizes-percentage: (
+  1: 1%,
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%,
+  auto: auto
+) !default;
+
+
+$loader-size: 2.5rem !default;
+
+$generate-social-colors: true !default;
+$generate-color-hues: true !default;
+$generate-colors: true !default;
+
+$enable-gradients: false !default;
+
+$grid-gutter-width: 24px !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1280px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px
+) !default;
+
+//alerts
+$alert-link-font-weight: 600 !default;
+
+//breadcrumb
+$breadcrumb-variants: (
+  dots: '·',
+  arrows: '›',
+  bullets: '\02022',
+) !default;
+
+//badges
+$badge-font-weight: 500 !default;
+
+//buttons
+$input-btn-font-size: 15px !default;
+$btn-padding-x: 1rem !default;
+
+$btn-font-weight: 500 !default;
+$btn-border-radius: 3px !default;
+
+//cards
+$card-border-color: $border-color !default;
+$card-border-radius: $border-radius !default;
+$card-cap-bg: $min-black !default;
+
+$card-active-border-color: $blue !default;
+$card-status-size: 2px !default;
+$card-group-margin: 1.5rem !default;
+
+$card-shadow: rgba($dark, .04) 0 2px 4px 0;
+$card-shadow-hover: rgba($dark, .08) 0 2px 12px 0;
+
+//close
+$close-font-weight: 400 !default;
+$close-font-size: 1.5rem !default;
+
+//nav
+$nav-link-padding-y: .25rem !default;
+
+//pagination
+$pagination-border-width: 0 !default;
+$pagination-padding-y: .25rem !default;
+$pagination-padding-x: .25rem !default;
+$pagination-color: $text-muted !default;
+$pagination-bg: transparent !default;
+$pagination-disabled-bg: transparent !default;
+$pagination-disabled-color: rgba($text-muted, .5) !default;
+
+//sidenav
+$sidenav-width: 16rem !default;
+$sidenav-folded-width: 4rem !default;
+$sidenav-bg: $white !default;
+$sidenav-border-color: $border-color !default;
+$sidenav-dark-bg: $dark !default;
+$sidenav-link-padding-x: .75rem !default;
+
+$navbar-padding-x: .75rem !default;
+$navbar-padding-y: .75rem !default;
+$navbar-nav-link-padding-x: .75rem !default;
+
+//steps
+$steps-border-width: 2px !default;
+$steps-color-inactive: #f3f5f5 !default;
+
+//spinner
+$spinner-width: 1.5rem !default;
+$spinner-height: 1.5rem !default;
+$spinner-border-width: 2px !default;
+$spinner-border-width-sm: 2px !default;
+
+//tables
+$table-head-border-color: $border-color !default;
+
+//toasts
+$toast-border-color: $border-color !default;
+$toast-header-color: $text-muted !default;
+
+//other
+$yiq-contrasted-threshold: 200 !default;
+
+//progress
+$progress-bg: $gray-100 !default;
+$progress-height: .75rem !default;
+
+//ribbons
+$ribbon-margin: .25rem !default;
+
+
+$list-group-border-color: $border-color !default;
+$list-group-action-color: inherit !default;
+
+$input-disabled-bg: $gray-100 !default;
+$input-border-color: $border-color !default;
+$input-placeholder-color: $text-muted !default;
+
+$input-group-addon-bg: $gray-100 !default;
+$input-group-addon-color: $text-muted !default;
+
+$dropdown-border-color: $border-color !default;
+
+$input-border-radius: $border-radius !default;
+
+
+//Forms
+$form-check-input-width: 1em;
+$form-check-input-border: 1px solid $border-color;
+$form-check-input-border-radius: $border-radius;
+$form-check-input-checked-bg-size: .75rem;
+
+$form-range-track-height: .25rem;
+
+$form-feedback-icon-valid: str-replace(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='" + $green + "' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-check'><polyline points='20 6 9 17 4 12'></polyline></svg>"), "#", "%23") !default;
+$form-feedback-icon-invalid: str-replace(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='" + $red + "' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-x'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>"), "#", "%23") !default;
+
+
+//Flags
+$generate-flags: true !default;
+$flag-sizes: (
+  "md": 2rem,
+  "lg": 3rem,
+  "xl": 4rem
+) !default;
+
+//Utilities
+$utilities: (
+  "object": (
+    property: object-fit,
+    class: object,
+    values: (
+      contain: contain,
+      cover: cover,
+      fill: fill,
+      scale-down: scale-down,
+      none: none,
+    )
+  ),
+  "spacing": (
+    property: letter-spacing,
+    class: tracking,
+    values: (
+      tight: -.05em,
+      normal: 0,
+      wide: .05em,
+    )
+  ),
+  "leading": (
+    property: line-height,
+    class: leading,
+    values: (
+      none: 1,
+      tight: 1.25,
+      normal: $line-height-base,
+      loose: 2 !important,
+    )
+  ),
+  "cursor": (
+    property: cursor,
+    class: cursor,
+    values: (
+      auto: auto,
+      pointer: pointer,
+      move: move,
+      not-allowed: not-allowed,
+      zoom-in: zoom-in,
+      zoom-out: zoom-out
+    )
+  )
+) !default;
