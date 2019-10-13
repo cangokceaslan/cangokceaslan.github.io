@@ -196,7 +196,7 @@
 
 
 	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
+	  //console.log('show');
 	});
 
 	// scroll
