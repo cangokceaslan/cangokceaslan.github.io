@@ -1,0 +1,275 @@
+/**
+* Typography Styles
+*/
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	overflow-x: hidden;
+	font-size: $body-font-size;
+	line-height: $body-line-height;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $body-font;
+	color: $body-color;
+	font-weight: 400;
+}
+
+::-webkit-input-placeholder {
+	color: $body-color;
+}
+
+:-moz-placeholder {
+	color: $body-color;
+}
+
+::-moz-placeholder {
+	color: $body-color;
+}
+
+:-ms-input-placeholder {
+	color: $body-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+address,
+p,
+pre,
+blockquote,
+dl,
+dd,
+menu,
+ol,
+ul,
+table,
+caption,
+hr {
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	font-family: $heading-font;
+	line-height: 1.3;
+}
+
+h1,
+.h1 {
+	font-size: 48px;
+}
+
+h2,
+.h2 {
+	font-size: 50px;
+}
+
+h3,
+.h3 {
+	font-size: 22px;
+}
+
+h4,
+.h4 {
+	font-size: 24px;
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+@media #{$md-layout} {
+	h1,
+	.h1 {
+		font-size: 36px;
+	}
+	h2,
+	.h2 {
+		font-size: 26px;
+	}
+	h3,
+	.h3 {
+		font-size: 20px;
+	}
+}
+
+@media #{$sm-layout} {
+	h1,
+	.h1 {
+		font-size: 32px;
+	}
+	h2,
+	.h2 {
+		font-size: 24px;
+	}
+	h3,
+	.h3 {
+		font-size: 18px;
+	}
+}
+
+h1,
+.h1,
+h2,
+.h2 {
+	font-weight: 700;
+}
+
+h3,
+.h3,
+h4,
+.h4 {
+	font-weight: 600;
+}
+
+h5,
+.h5,
+h6,
+.h6 {
+	font-weight: 500;
+}
+
+p {
+	b {
+		font-weight: 500;
+	}
+}
+
+a {
+	transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	outline: none;
+}
+
+blockquote {
+	background: #2c2c2c;
+	text-align: center;
+	padding: 40px 40px;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'poppins', sans-serif;
+	font-style: inherit;
+	line-height: 48px;
+	color: #ffffff;
+	&::before {
+		content: "\e67f";
+		font-family: themify;
+		font-size: 50px;
+		line-height: 1;
+		display: block;
+		color: rgba($color-skyblue, 1);
+		padding-bottom: 16px;
+	}
+	&.blockquote-2 {
+		border-top: 4px solid #f6f6f6;
+		border-bottom: 4px solid #f6f6f6;
+		background: transparent;
+		font-size: 24px;
+		line-height: 39px;
+		font-weight: 700;
+		color: $heading-color;
+		text-align: left;
+		padding: 45px 0;
+		padding-left: 66px;
+		position: relative;
+		&::before {
+			display: inline-block;
+			color: $color-skyblue;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			font-size: 36px;
+			font-weight: 400;
+		}
+	}
+}
+
+input,
+select,
+textarea {
+	height: 50px;
+	padding: 0 20px;
+	width: 100%;
+	background: transparent;
+	border: 1px solid #efefef;
+	margin-bottom: 30px;
+	font-family: $body-font;
+	font-size: 14px;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+input[type="submit"],
+input[type="reset"] {
+	width: auto;
+	background: #272b2b;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 14px 30px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	&:hover {
+		background: $color-skyblue;
+	}
+}
+
+textarea {
+	height: auto;
+	padding: 20px;
+}
+
+@media #{$sm-layout} {
+	blockquote {
+		&.blockquote-2 {
+			border-top: 4px solid #f6f6f6;
+			border-bottom: 4px solid #f6f6f6;
+			background: transparent;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 700;
+			color: #272b2b;
+			text-align: left;
+			padding: 30px 0;
+			padding-left: 45px;
+			position: relative;
+			&::before{
+				font-size: 30px;
+			}
+		}
+	}
+}

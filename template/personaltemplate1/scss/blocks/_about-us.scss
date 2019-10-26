@@ -1,0 +1,377 @@
+/**
+* About Us Styles
+*/
+
+.about-us-content-inner{
+    position: relative;
+    z-index: 1;
+    .section-title{
+        margin-bottom: 70px;
+    }
+    & > p{
+        padding-left: 70px;
+    }
+    &::before{
+        content: url(images/letters/about-letters.png);
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: -1;
+    }
+}
+
+.about-us-quote{
+    display: flex;
+    margin-top: 30px;
+}
+
+.about-us-quote-thumb{
+    width: 55%;
+}
+
+.about-us-quote-content{
+    text-align: center;
+    width: 45%;
+    background-image: url(images/about/about-us-quote-content-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
+    color: #ffffff;
+    padding: 45px;
+    i{
+        font-size: 60px;
+    }
+    p{
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 38px;
+        font-family: $body-font;
+        font-weight: 700;
+    }
+    .about-us-quote-author{
+        position: relative;
+        padding-top: 20px;
+        &::before{
+            content: "";
+            left: 50%;
+            top: 0;
+            height: 1px;
+            width: 30px;
+            margin-left: -15px;
+            background: #ffffff;
+            position: absolute;
+        }
+        h6{ 
+            color: #ffffff;
+            font-size: 18px;
+            font-family: $body-font;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        span{
+            color: #ffffff;
+        }
+    }
+}
+
+
+/* About Us Philosophy */
+.about-us-philosophy-area{
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: url(images/letters/mission-letters.png);
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: -1;
+    }
+}
+
+.about-us-philosophy{
+    display: flex;
+    justify-content: space-between;
+
+    .about-us-philosophy-content{
+        width: 345px;
+        background: #f6f6f6;
+        padding: 30px;
+        padding-left: 50px;
+        padding-top: 50px;
+        position: relative;
+        text-align: left;
+        margin-top: 30px;
+        &:before{
+            content: "";
+            position: absolute;
+            height: 150px;
+            width: 1px;
+            background: #dddddd;
+            left: 25px;
+            top: 25px;
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 150px;
+            background: #dddddd;
+            left: 25px;
+            top: 25px;
+        }
+    }
+
+    .about-us-philosophy-title{
+        display: inline-block;
+        width: 200px;
+        height: 120px;
+        background: $color-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-family: $body-font;
+        color: #ffffff;
+        margin-bottom: 0;
+        margin-top: 30px;
+        padding: 10px;
+        position: relative;
+        text-align: center;
+
+        &::before{
+            content: "";
+            height: 1px;
+            width: 40px;
+            position: absolute;
+            right: 100%;
+            top: 50%;
+            background: $color-blue;
+        }
+
+    }
+
+    &.vision{
+        flex-direction: row-reverse;
+        .about-us-philosophy-title{
+            background: $color-skyblue;
+            &::before{
+                background: $color-skyblue;
+                right: auto;
+                left: 100%;
+            }
+        }
+    }
+
+    &.goal{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: -163px;
+        .about-us-philosophy-title{
+            background: $color-violet;
+            &::before{
+                background: $color-violet;
+                width: 1px;
+                height: 40px;
+                right: 50%;
+                left: 50%;
+                top: 100%;
+            }
+        }
+    }
+
+}
+
+/* About Us Skills */
+.about-us-skills-area{
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: url(images/letters/skills-letters.png);
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: -1;
+    }
+}
+
+.about-us-skills{
+    margin-top: 70px;
+    padding: 0 70px;
+}
+
+
+
+/* About Us Team */
+.about-us-team-area{
+    position: relative;
+    z-index: 1;
+    &::before{
+        content: url(images/letters/team-letters.png);
+        position: absolute;
+        left: 0;
+        top: 130px;
+        z-index: -1;
+    }
+}
+
+.about-us-team{
+    .slick-list{
+        padding: 0 50px !important;
+        margin-left: -50px;
+        margin-right: -50px;
+    }
+}
+
+
+
+
+@media #{$lg-layout}{
+    .about-us-quote{
+        flex-wrap: wrap;
+    }
+    .about-us-quote-thumb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .about-us-quote-content{
+        width: 100%;
+    }
+    .about-us-philosophy .about-us-philosophy-title{
+        font-size: 20px;
+    }
+    .about-us-philosophy .about-us-philosophy-content {
+        padding-left: 30px;
+        padding-top: 30px;
+        width: 330px;
+        &::after, &::before{
+            left: 15px;
+            top: 15px;
+        }
+    }
+    .about-us-philosophy.mission {
+        margin-right: -10px;
+        .about-us-philosophy-title{
+            margin-left: 20px;
+        }
+    }
+    .about-us-philosophy.vision {
+        margin-left: -10px;
+        .about-us-philosophy-title{
+            margin-right: 20px;
+        }
+    }
+    .about-us-philosophy.goal{
+        margin-top: -245px;
+    }
+}
+
+@media #{$md-layout}{
+    .about-us-content-inner .section-title{
+        margin-bottom: 30px;
+    }
+    .about-us-quote{
+        flex-wrap: wrap;
+    }
+    .about-us-quote-thumb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .about-us-quote-content{
+        width: 100%;
+    }
+    .about-us-philosophy {
+        flex-direction: column-reverse;
+        align-items: center;
+        &.mission, &.vision, &.goal{
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 0;
+
+            .about-us-philosophy-title::before {
+                height: 40px;
+                width: 1px;
+                right: auto;
+                top: 100%;
+                left: 50%;
+            }
+
+        }
+
+        .about-us-philosophy-content{
+            width: 100%;
+        }
+
+        .about-us-philosophy-title::before {
+            height: 40px;
+            width: 1px;
+            right: auto;
+            top: 100%;
+            left: 50%;
+        }
+
+    }
+}
+
+@media #{$sm-layout}{
+    .about-us-content-inner .section-title{
+        margin-bottom: 30px;
+    }
+    .about-us-quote{
+        flex-wrap: wrap;
+    }
+    .about-us-quote-thumb{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .about-us-quote-content{
+        width: 100%;
+    }
+    .about-us-philosophy {
+        flex-direction: column-reverse;
+        align-items: center;
+        &.mission, &.vision, &.goal{
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 0;
+
+            .about-us-philosophy-title::before {
+                height: 40px;
+                width: 1px;
+                right: auto;
+                top: 100%;
+                left: 50%;
+            }
+
+        }
+
+        .about-us-philosophy-content{
+            width: 100%;
+        }
+
+        .about-us-philosophy-title::before {
+            height: 40px;
+            width: 1px;
+            right: auto;
+            top: 100%;
+            left: 50%;
+        }
+    }
+    .about-us-skills{
+        padding: 0;
+    }
+}
+
+@media #{$xs-layout}{
+    .about-us-quote-content{
+        padding: 15px;
+    }
+    .about-us-quote-content p {
+        font-size: 20px;
+    }
+}

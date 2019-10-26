@@ -1,0 +1,51 @@
+/**
+* Blog Area Styles
+*/
+
+.blogs-area-filters{
+
+    button{
+        display: inline-block;
+        color: $body-color;
+        font-weight: 300;
+        font-size: 18px;
+        background: transparent;
+        line-height: 28px;
+        padding: 20px 25px;
+        outline: none;
+        border: none;
+        transition: all 0.4s ease-in-out 0s;
+
+        &.is-checked, &:hover{
+            color: $color-skyblue;
+        }
+
+    }
+
+}
+
+.blog-items-wrapper {
+    margin-top: 50px;
+}
+
+.blogs-load-more-toggle{
+    margin-top: 80px;
+}
+
+@media #{$md-layout}{
+    .blogs-area-filters {
+        padding: 15px 0;
+        button{
+            padding: 8px 12px;
+        }
+    }
+}
+
+@media #{$sm-layout}{
+    .blogs-area-filters {
+        padding: 15px 0;
+        button{
+            padding: 8px 12px;
+        }
+    }
+}
