@@ -125,13 +125,16 @@ textarea:focus{ outline-color: #F9B500; }
 3. HEADER
 --------------------------------- */
 
-header{ font-size: 1.1em; position: absolute;  top: 0; left: 0; right: 0; text-align: center; z-index: 1000; font-weight: 600; color: #fff; }
+header{ position:fixed;top:0px;left:0px;width:100%;font-size: 1.1em; background-color:black; opacity: 0.9;   top: 0; left: 0; right: 0; text-align: center; z-index: 1000; font-weight: 600; color: #fff; }
 
-header:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: #aaa;}
+header:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: white;}
 
 header i{ font-size: 1.1em; }
-
-
+@media only screen and (max-width:559px){
+	.right-area{
+		display:none;
+	}
+}
 /* BOTTOM HEADER */
 
 header:after{ content:''; clear: both; }
@@ -146,7 +149,7 @@ header ul.main-menu > li > a{ height: 100%; line-height: 70px; padding: 0px 15px
 /* SEARCH AREA */
 
 header .right-area{ float: right; height: 100%; height: 70px; width: 300px;
-	position: relative; font-size: 1.2em; border-left: 1px solid #aaa; }
+	position: relative; font-size: 1.2em; border-left: 1px solid white; }
 
 header .src-form{ position: absolute; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: 1; margin-right: 20px;
 	overflow: hidden; -webkit-transition: all .2s; transition: all .2s; }
@@ -463,7 +466,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .bg-map{ background: url(../images/map.png) no-repeat center; background-size: cover; }
 
-.bg-1{ background: url(../images/slider_1_1900x1200.jpg) no-repeat center; background-size: cover; }
+.bg-1{ background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/breaking-news-background_z1jw_lhgb__F0000.png) no-repeat center; background-size: cover; }
 .bg-2{ background: url(../images/trending_1_400X500.jpg) no-repeat center; background-size: cover; }
 .bg-3{ background: url(../images/trending_2_400X300.jpg) no-repeat center; background-size: cover; }
 .bg-4{ background: url(../images/trending_2_400X250.jpg) no-repeat center; background-size: cover; }
