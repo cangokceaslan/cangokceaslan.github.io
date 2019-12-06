@@ -1,0 +1,89 @@
+/**
+* Section Title
+*/
+
+.section-title{
+    padding-left: 70px;
+    h4{
+        font-weight: 700;
+        font-family: $body-font;
+        color: $heading-color;
+        position: relative;
+        &::before{
+            content: "";
+            left: -70px;
+            right: auto;
+            top: 50%;
+            position: absolute;
+            height: 1px;
+            width: 55px;
+            background: $color-skyblue;
+            margin-top: -2px;
+        }
+    }
+    h2{
+        font-weight: 900;
+        font-family: $body-font;
+        color: $heading-color;
+        font-size: 50px;
+        span{
+            color: $color-skyblue;
+        }
+    }
+}
+
+
+.small-title{
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: $body-font;
+    line-height: 28px;
+    color: $heading-color;
+    font-weight: 700;
+}
+
+
+@media #{$lg-layout}{
+    .section-title{
+        h4{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 42px;
+        }
+    }
+}
+
+@media #{$md-layout}{
+    .section-title{
+        h4{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 36px;
+        }
+    }
+}
+
+@media #{$sm-layout}{
+    .section-title{
+        h4{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 28px;
+        }
+    }
+}
+
+@media #{$xs-layout}{
+    .section-title{
+        padding-left: 0;
+        h4{
+            font-size: 18px;
+        }
+        h2{
+            font-size: 28px;
+        }
+    }
+}

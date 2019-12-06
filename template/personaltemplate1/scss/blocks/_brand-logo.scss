@@ -1,0 +1,17 @@
+/**
+* Brand Logo Styles
+*/
+
+.single-brand-logo {
+    min-height: 150px;
+    display: flex !important;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    a{
+        display: inline-block;
+        padding: 30px;
+    }
+}

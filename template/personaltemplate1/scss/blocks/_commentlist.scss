@@ -1,0 +1,60 @@
+/**
+* Commentlist Styles
+*/
+
+.single-comment{
+    display: flex;
+    margin-top: 60px;
+    .single-comment-thumb{
+        padding-right: 30px;
+    }
+    .single-comment-content{
+        flex-shrink: 100;
+        h6{
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: $body-font;
+            color: $heading-color;
+        }
+        span{
+            display: block;
+            color: $heading-color;
+            font-size: 14px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #efefef;
+        }
+        p{
+            margin-top: 17px;
+            margin-bottom: 0;
+        }
+    }
+    &.reply{
+        padding-left: 80px;
+    }
+}
+
+@media #{$md-layout}{
+    .single-comment{
+        margin-top: 40px;
+        .single-comment-thumb{
+            flex: 0 0 135px;
+        }
+    }
+}
+
+@media #{$sm-layout}{
+    .single-comment{
+        flex-wrap: wrap;
+        margin-top: 40px;
+        .single-comment-thumb{
+            flex: 0 0 135px;
+        }
+        .single-comment-content{
+            margin-top: 30px;
+        }
+        &.reply{
+            padding-left: 30px;
+        }
+    }
+}

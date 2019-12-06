@@ -1,0 +1,384 @@
+body {
+    background: #0d0d0d;
+    color: #dddddd;
+}
+
+input, select, textarea{
+    color: #dddddd;
+}
+
+input[type="submit"], input[type="reset"]{
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #dddddd;
+  }
+  
+  :-moz-placeholder {
+    color: #dddddd;
+  }
+  
+  ::-moz-placeholder {
+    color: #dddddd;
+  }
+  
+  :-ms-input-placeholder {
+    color: #dddddd;
+  }
+
+
+blockquote.blockquote-2{
+    border-color: #131313;
+    color: #f6f6f6;
+}
+
+.portfolio-details-area-dark{
+    position: relative;
+    z-index: 1;
+}
+
+.portfolio-details-area-dark::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 100%;
+    width: 1310px;
+    background: rgba(0,0,0,0.2);
+}
+.small-title,
+.section-title h4,
+.section-title h2{
+    color: #f6f6f6;
+}
+
+a.cr-btn-icon,
+button.cr-btn-icon,
+.cr-btn-icon {
+    color: #ffffff;
+}
+
+a.cr-btn-icon::before,
+button.cr-btn-icon::before,
+.cr-btn-icon::before {
+    background: #222222;
+    opacity: 1;
+}
+
+.cr-btn.cr-btn-icon span.icon {
+    background: #000000;
+}
+
+.cr-btn.cr-btn-icon span.text {
+    border-color: #222222;
+    color: #ffffff;
+}
+
+.cr-readmore,
+a.cr-readmore,
+button.cr-readmore {
+    color: #dddddd;
+}
+
+
+.about-me-block h2,
+.about-me-block h4,
+.single-portfolio .single-portfolio-content h2,
+.single-portfolio .single-portfolio-content h5,
+.single-portfolio .single-portfolio-content h2 a,
+.cr-breadcrumb h1,
+.blog-item-title a {
+    color: #f6f6f6;
+}
+
+.imgmenu2 {
+    background: url(../images/imgmenu/imgmenu-dark-bg.jpg);
+}
+
+.imgmenu-single-area {
+    background: #0d0d0d;
+}
+
+.fullscreen-header {
+    background-image: url(../images/icons/black-bg-pattern.png);
+    background-size: inherit;
+    background-repeat: repeat;
+}
+
+.about-me-content-tab ul.slick-dots li.slick-active {
+    background: #175ef7;
+    color: #272b2b;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.about-me-content-tab ul.slick-dots li::after {
+    border-color: transparent transparent transparent #175ef7;
+}
+
+.about-me-block h4::before {
+    background: #175ef7;
+}
+
+.portfolios-area {
+    background: #1f1d1b;
+}
+
+.single-portfolio .single-portfolio-thumb a::before {
+    background: #000000;
+    opacity: 0.2;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.single-portfolio .single-portfolio-thumb:hover a::before {
+    opacity: 0.7;
+}
+
+.single-portfolio .single-portfolio-thumb::after {
+    background: #555555;
+}
+
+.blog-area-inner-wrap {
+    background-image: url(../images/bg/blog-dark-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    position: relative;
+    z-index: 1;
+}
+
+.blog-area-inner-wrap:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(11, 10, 10, 0.9);
+    z-index: -1;
+}
+
+.blog-item {
+    background: transparent;
+}
+
+.blog-item-date,
+.blog-item-date span.month {
+    color: #ffffff;
+}
+
+.blog-item-meta li,
+.blog-item-meta li a,
+.blog-item-meta li a i,
+.blog-item-share .blog-item-share-toggle,
+.social-links-rounded ul li a {
+    color: #dddddd;
+}
+
+.social-links-rounded ul li a{
+    border-color: #dddddd;
+}
+
+.blog-item-content::before,
+.blog-item-content::after,
+.blog-item-qote::before,
+.blog-item-audio::before,
+.blog-item-image::before,
+.blog-item-qote::after,
+.blog-item-audio::after,
+.blog-item-image::after {
+    background: #222222;
+}
+
+.blogs-area-filters-wrap {
+    background: #191919;
+}
+
+.blogs-area-filters button {
+    color: #dddddd;
+}
+
+.blog-details-wrap {
+    background: #000000;
+}
+
+.blog-details-dark{
+    background-image: url(../images/bg/blog-details-dark-bg.jpg);
+    background-size: cover;
+}
+
+.blog-details .blog-details-title{
+    color: #ffffff;
+}
+
+.blog-item-postby, 
+.blog-item-postby a, 
+.blog-details-tags ul li a{
+    color: #dddddd;
+}
+
+
+.blog-details-navigation{
+    background: #131313;
+}
+
+.blog-details-navigation a,
+.single-comment .single-comment-content span{
+    color: #dddddd;
+}
+
+.blog-details-author-content h6{
+    color: #f6f6f6;
+}
+
+.blog-details-author-wrap,
+.blog-details-commentlist-wrap{
+    border-color: #131313;
+}
+
+.single-comment .single-comment-content h6{
+    color: #f6f6f6;
+}
+
+.single-comment .single-comment-content span,
+input, textarea, select{
+    border-color:#242424;
+}
+
+.portfolio-details-dark{
+    background: #101213;
+}
+
+.portfolio-navigation-area {
+    background: #000000;
+}
+
+.portfolio-navigation a{
+    color: #999999;
+}
+
+.portfolio-details-share h6{
+    color: #f6f6f6;
+}
+
+.portfolio-details-meta ul li a {
+    color: #ffffff;
+}
+
+.portfolio-head-content h5::after{
+    background: #ffffff;
+}
+
+.portfolio-video{
+    padding: 50px 0;
+    background-image: url(../images/icons/black-bg-pattern.png);
+    background-repeat: repeat;
+}
+
+.portfolio-video .plyr--video{
+    margin-top: 0;
+}
+
+.portfolio-details-content-inner{
+    margin-top: 0;
+}
+
+
+
+/* Contact Page Dark */
+.contact-page-dark{
+    background-image: url(../images/bg/contact-body-dark-bg.jpg);
+    position: relative;
+}
+.contact-page-dark::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+}
+.contact-page-address-single{
+    background: #000000;
+    box-shadow: 0 0 15px rgba(#4d4d4d, 0.11);
+}
+.contact-page-address-single .contact-page-address-content h6 {
+    color: #ffffff;
+}
+.contact-page-address-single .contact-page-address-content a{
+    color: #dddddd;
+}
+.single-comment .single-comment-content span, input, textarea, select{
+    border-color: #666666;
+}
+.contact-page-social h4{
+    color: #f6f6f6;
+}
+.contact-page-copyright a{
+    color: #dddddd;
+}
+.contact-page-social .social-links ul li a{
+    color: #444444;
+}
+
+.about-us-philosophy .about-us-philosophy-content{
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.about-us-philosophy .about-us-philosophy-content::before,
+.about-us-philosophy .about-us-philosophy-content::after{
+    background: #272727;
+}
+
+.progress-title,
+.progress .progress-bar .progress-count{
+    color: #dddddd;
+}
+
+.team-member .team-member-content{
+    background-image: url(../images/team/team-content-background-blue.png);
+}
+
+.brand-logo-area,
+.brand-logo-area.bg-white{
+    background: #111111 !important;
+}
+
+.contact-page-social .social-links ul li a {
+    color: #b8b8b8;
+}
+.dropcap{
+    text-shadow: 4px 4px 0px #0d1090;
+    color: rgba(23, 94, 247, 1);
+}
+
+.progress {
+    background: #000000;
+}
+
+
+.progress.color-skyblue .progress-bar .progress-count{
+    color: #03e3e6;
+}
+
+.progress.color-yellow .progress-bar .progress-count{
+    color: #ffe400;
+}
+
+.progress.color-darkviolet .progress-bar .progress-count{
+    color: #411580;
+}
+
+.progress.color-pink .progress-bar .progress-count{
+    color: #e60389;
+}
+
+.progress.color-pink .progress-bar .progress-count{
+    color: #175ef7;
+}

@@ -1,0 +1,189 @@
+/**
+* Button Styles
+*/
+
+.cr-btn{
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba($color-skyblue, 0.8);
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+    &:hover{
+        color: #ffffff;
+
+        &::before{
+            opacity: 1;
+        }
+
+    }
+
+
+    &.cr-btn-icon{
+        display: inline-block;
+        font-size: 0;
+    
+        span.icon{
+            display: inline-block;
+            padding: 20px 25px;
+            background: #f6f6f6;
+            height: 70px;
+            font-size: 16px;
+            transition: all 0.4s ease-in-out 0s;
+            img, i{
+                animation: crSpinn 4s linear 0s infinite both;
+                height: 30px;
+                width: 30px;
+            }
+        }
+        
+        span.text{
+            display: inline-block;
+            border: 1px solid #efefef;
+            padding: 19px 40px;
+            color: $heading-color;
+            font-family: $body-font;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 16px;
+            height: 70px;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        &:hover{
+
+            span.icon{
+                background: rgba($color-skyblue, 0.8);
+            }
+
+            span.text{
+                border-color: rgba($color-skyblue, 0.8);
+            }
+
+            span.text, span.icon{
+                color: #ffffff;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+/* Read More Button */
+.cr-readmore,
+a.cr-readmore, 
+button.cr-readmore{
+    display: inline-block;
+    font-family: $body-font;
+    color: $heading-color;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    span{
+        margin-left: 30px;
+        display: inline-block;
+        height: 14px;
+        width: 51px;
+        position: relative;
+        overflow: hidden;
+        img{
+            transition: all 0.3s ease-in-out 0s;
+            position: absolute;
+            &:first-child{
+                left: 0;
+                top: 0;
+            }
+            &:last-child{
+                left: -100%;
+                top: 0;
+            }
+        }
+    }
+    
+    &:hover{
+        color: $color-skyblue;
+        span{
+            img{
+                &:first-child{
+                    left: 100%;
+                }
+                &:last-child{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Video Button */
+.cr-video-btn{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    z-index: 1;
+    
+    span{
+        height: 80px;
+        width: 80px;
+        background: #ffffff;
+        display: inline-block;
+        border-radius: 1000px;
+        padding: 25px 0;
+        transition: all 0.4s ease-out 0s;
+        img{
+            padding-left: 5px;
+        }
+    }
+
+
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        background: rgba(255,255,255,0.4);
+        z-index: -1;
+        animation: crZoomInOutInvisible 1s ease-in-out infinite backwards;
+    }
+
+    &::after{
+        animation-delay: 0.3s;
+    }
+
+    &.cr-video-btn-small{
+        width: 60px;
+        height: 60px;
+        span{
+            height: 60px;
+            width: 60px;
+            padding: 14px 20px;
+            img{
+                padding-left: 3px;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,228 @@
+/**
+* Contact Styles
+*/
+
+.contact-page-address{
+    position: relative;
+    &::before{
+        content: url(images/letters/contact-letters.png);
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}
+
+.contact-page-address-single{
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.15);
+    padding: 30px;
+    display: flex;
+    .contact-page-address-icon{
+        display: inline-block;
+        height: 75px;
+        width: 75px;
+        border-radius: 1000px;
+        text-align: center;
+        padding: 10px;
+        line-height: 75px;
+        z-index: 1;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        position: relative;
+        margin-right: 25px;
+        transition: all 0.4s ease-in-out 0s;
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 1000px;
+            background: rgba(0,0,0,0.1);
+            z-index: -1;
+            transform: scale(0);
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        svg{
+            height: 30px;
+            fill: $heading-color;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        &.color-skyblue{
+            box-shadow: 0 0 15px rgba($color-blue, 0.8);
+            svg{
+                fill: $color-blue;
+            }
+        }
+
+        &.color-blue{
+            box-shadow: 0 0 15px rgba($color-skyblue, 0.8);
+            svg{
+                fill: $color-skyblue;
+            }
+        }
+
+        &.color-yellow{
+            box-shadow: 0 0 15px rgba($color-yellow, 0.8);
+            svg{
+                fill: $color-yellow;
+            }
+        }
+
+    }
+
+    .contact-page-address-content{
+        flex-shrink: 100;
+
+        h6{
+            font-family: $body-font;
+            font-size: 16px;
+            font-weight: 700;
+            color: $heading-color;
+        }
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            color: $body-color;
+            &:hover{
+                color: $color-skyblue;
+            }
+        }
+    }
+
+    &:hover{
+        .contact-page-address-icon{
+
+            &::before{
+                transform: scale(1);
+            }
+            
+            &.color-skyblue{
+                background: $color-blue;
+            }
+            
+            &.color-blue{
+                background: $color-skyblue;
+            }
+            
+            &.color-yellow{
+                background: $color-yellow;
+            }
+
+            svg{
+                fill: #ffffff;
+            }
+
+        }
+    }
+}
+.contact-form{
+    input[type="submit"]{
+        margin-bottom: 0;
+    }
+}
+
+
+.contact-page-social{
+    margin-top: 20px;
+    h4 {
+        display:  inline-block;
+        font-weight:  700;
+        color:  $heading-color;
+        font-family: $body-font;
+    }
+    
+    .social-links {
+        display: inline-block;
+        padding-left: 30px;
+        ul{
+            li{
+                a{
+                    color: $heading-color;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+.contact-page-copyright{
+    text-align: right;
+    margin-top: 20px;
+    a{
+        color: $body-color;
+        &:hover{
+            color: $color-skyblue;
+        }
+    }
+}
+
+.google-map{
+    min-height: 340px;
+}
+
+
+@media #{$lg-layout}{
+    .contact-page-address-single{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .contact-page-address-icon{
+            margin-right: 0;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .contact-page-address-content{
+            flex: 0 0 100%;
+        }
+    }
+}
+
+@media #{$md-layout}{
+    .contact-page-address-single{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .contact-page-address-icon{
+            margin-right: 0;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .contact-page-address-content{
+            flex: 0 0 100%;
+        }
+    }
+    .contact-page-copyright{
+        text-align: left;
+        margin-top: 0;
+    }
+}
+
+@media #{$sm-layout}{
+    .contact-page-address-single{
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        .contact-page-address-icon{
+            margin-right: 0;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        .contact-page-address-content{
+            flex: 0 0 100%;
+        }
+    }
+    .contact-page-social h4{
+        display: block;
+    }
+    .contact-page-social .social-links{
+        padding-left: 0;
+    }
+    .contact-page-copyright{
+        text-align: left;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,545 @@
+/**
+* Social Links Styles
+*/
+
+.social-links {
+    ul {
+        display: inline-block;
+        margin-bottom: 0;
+        padding-left: 0;
+        li {
+            display: inline-block;
+            list-style: none;
+            margin: 0 5px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                font-size: 18px;
+                color: #bcb5b5;
+                &:hover {
+                    color: $color-violet;
+                }
+            }
+        }
+    }
+}
+
+.social-links-rounded {
+    ul {
+        li {
+            display: inline-block;
+            margin: 0 2px;
+            a {
+                display: inline-block;
+                padding: 3px;
+                color: #6a6a6a;
+                height: 32px;
+                width: 32px;
+                border: 1px solid #6a6a6a;
+                border-radius: 1000px;
+                text-align: center;
+                font-size: 14px;
+                &:hover {
+                    color: #ffffff;
+                    background: $color-skyblue;
+                    border-color: $color-skyblue;
+                }
+            }
+        }
+    }
+}
+
+.social-links-colored {
+    ul {
+        li {
+            a {
+                color: #666666;
+                display: inline-block;
+                padding: 2px;
+                font-size: 18px;
+            }
+            &:hover {
+                a {
+                    color: #ffffff;
+                }
+                &.facebook {
+                    a {
+                        color: $facebook !important;
+                    }
+                }
+                &.twitter {
+                    a {
+                        color: $twitter !important;
+                    }
+                }
+                &.google-plus {
+                    a {
+                        color: $google-plus !important;
+                    }
+                }
+                &.pinterest {
+                    a {
+                        color: $pinterest !important;
+                    }
+                }
+                &.linkedin {
+                    a {
+                        color: $linkedin !important;
+                    }
+                }
+                &.flickr {
+                    a {
+                        color: $flickr !important;
+                    }
+                }
+                &.dribbble {
+                    a {
+                        color: $dribbble !important;
+                    }
+                }
+                &.google {
+                    a {
+                        color: $google !important;
+                    }
+                }
+                &.skype {
+                    a {
+                        color: $skype !important;
+                    }
+                }
+                &.youtube {
+                    a {
+                        color: $youtube !important;
+                    }
+                }
+                &.vimeo {
+                    a {
+                        color: $vimeo !important;
+                    }
+                }
+                &.yahoo {
+                    a {
+                        color: $yahoo !important;
+                    }
+                }
+                &.paypal {
+                    a {
+                        color: $paypal !important;
+                    }
+                }
+                &.delicious {
+                    a {
+                        color: $delicious !important;
+                    }
+                }
+                &.flattr {
+                    a {
+                        color: $flattr !important;
+                    }
+                }
+                &.android {
+                    a {
+                        color: $android !important;
+                    }
+                }
+                &.tumblr {
+                    a {
+                        color: $tumblr !important;
+                    }
+                }
+                &.wikipedia {
+                    a {
+                        color: $wikipedia !important;
+                    }
+                }
+                &.stumbleupon {
+                    a {
+                        color: $stumbleupon !important;
+                    }
+                }
+                &.foursquare {
+                    a {
+                        color: $foursquare !important;
+                    }
+                }
+                &.digg {
+                    a {
+                        color: $digg !important;
+                    }
+                }
+                &.spotify {
+                    a {
+                        color: $spotify !important;
+                    }
+                }
+                &.reddit {
+                    a {
+                        color: $reddit !important;
+                    }
+                }
+                &.cc {
+                    a {
+                        color: $cc !important;
+                    }
+                }
+                &.vk {
+                    a {
+                        color: $vk !important;
+                    }
+                }
+                &.rss {
+                    a {
+                        color: $rss !important;
+                    }
+                }
+                &.podcast {
+                    a {
+                        color: $podcast !important;
+                    }
+                }
+                &.dropbox {
+                    a {
+                        color: $dropbox !important;
+                    }
+                }
+                &.github {
+                    a {
+                        color: $github !important;
+                    }
+                }
+                &.soundcloud {
+                    a {
+                        color: $soundcloud !important;
+                    }
+                }
+                &.wordpress {
+                    a {
+                        color: $wordpress !important;
+                    }
+                }
+                &.yelp {
+                    a {
+                        color: $yelp !important;
+                    }
+                }
+                &.scribd {
+                    a {
+                        color: $scribd !important;
+                    }
+                }
+                &.cc-stripe {
+                    a {
+                        color: $cc-stripe !important;
+                    }
+                }
+                &.drupal {
+                    a {
+                        color: $drupal !important;
+                    }
+                }
+                &.get-pocket {
+                    a {
+                        color: $get-pocket !important;
+                    }
+                }
+                &.bitbucket {
+                    a {
+                        color: $bitbucket !important;
+                    }
+                }
+                &.stack-overflow {
+                    a {
+                        color: $stack-overflow !important;
+                    }
+                }
+                &.hacker-news {
+                    a {
+                        color: $hacker-news !important;
+                    }
+                }
+                &.xing {
+                    a {
+                        color: $xing !important;
+                    }
+                }
+                &.instagram {
+                    a {
+                        color: $instagram !important;
+                    }
+                }
+                &.quora {
+                    a {
+                        color: $quora !important;
+                    }
+                }
+                &.openid {
+                    a {
+                        color: $openid !important;
+                    }
+                }
+                &.steam {
+                    a {
+                        color: $steam !important;
+                    }
+                }
+                &.amazon {
+                    a {
+                        color: $amazon !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social-links-rounded-colored {
+    ul {
+        li {
+            a {
+                color: #ffffff;
+                height: 30px;
+                line-height: 32px;
+                width: 30px;
+                display: inline-block;
+                border-radius: 100px;
+                outline-color: 88%;
+                font-size: 12px;
+                text-align: center;
+            }
+            &:hover {
+                a {
+                    color: #ffffff;
+                }
+            }
+            &.facebook {
+                a {
+                    background-color: $facebook !important;
+                }
+            }
+            &.twitter {
+                a {
+                    background-color: $twitter !important;
+                }
+            }
+            &.google-plus {
+                a {
+                    background-color: $google-plus !important;
+                }
+            }
+            &.pinterest {
+                a {
+                    background-color: $pinterest !important;
+                }
+            }
+            &.linkedin {
+                a {
+                    background-color: $linkedin !important;
+                }
+            }
+            &.flickr {
+                a {
+                    background-color: $flickr !important;
+                }
+            }
+            &.dribbble {
+                a {
+                    background-color: $dribbble !important;
+                }
+            }
+            &.google {
+                a {
+                    background-color: $google !important;
+                }
+            }
+            &.skype {
+                a {
+                    background-color: $skype !important;
+                }
+            }
+            &.youtube {
+                a {
+                    background-color: $youtube !important;
+                }
+            }
+            &.vimeo {
+                a {
+                    background-color: $vimeo !important;
+                }
+            }
+            &.yahoo {
+                a {
+                    background-color: $yahoo !important;
+                }
+            }
+            &.paypal {
+                a {
+                    background-color: $paypal !important;
+                }
+            }
+            &.delicious {
+                a {
+                    background-color: $delicious !important;
+                }
+            }
+            &.flattr {
+                a {
+                    background-color: $flattr !important;
+                }
+            }
+            &.android {
+                a {
+                    background-color: $android !important;
+                }
+            }
+            &.tumblr {
+                a {
+                    background-color: $tumblr !important;
+                }
+            }
+            &.wikipedia {
+                a {
+                    background-color: $wikipedia !important;
+                }
+            }
+            &.stumbleupon {
+                a {
+                    background-color: $stumbleupon !important;
+                }
+            }
+            &.foursquare {
+                a {
+                    background-color: $foursquare !important;
+                }
+            }
+            &.digg {
+                a {
+                    background-color: $digg !important;
+                }
+            }
+            &.spotify {
+                a {
+                    background-color: $spotify !important;
+                }
+            }
+            &.reddit {
+                a {
+                    background-color: $reddit !important;
+                }
+            }
+            &.cc {
+                a {
+                    background-color: $cc !important;
+                }
+            }
+            &.vk {
+                a {
+                    background-color: $vk !important;
+                }
+            }
+            &.rss {
+                a {
+                    background-color: $rss !important;
+                }
+            }
+            &.podcast {
+                a {
+                    background-color: $podcast !important;
+                }
+            }
+            &.dropbox {
+                a {
+                    background-color: $dropbox !important;
+                }
+            }
+            &.github {
+                a {
+                    background-color: $github !important;
+                }
+            }
+            &.soundcloud {
+                a {
+                    background-color: $soundcloud !important;
+                }
+            }
+            &.wordpress {
+                a {
+                    background-color: $wordpress !important;
+                }
+            }
+            &.yelp {
+                a {
+                    background-color: $yelp !important;
+                }
+            }
+            &.scribd {
+                a {
+                    background-color: $scribd !important;
+                }
+            }
+            &.cc-stripe {
+                a {
+                    background-color: $cc-stripe !important;
+                }
+            }
+            &.drupal {
+                a {
+                    background-color: $drupal !important;
+                }
+            }
+            &.get-pocket {
+                a {
+                    background-color: $get-pocket !important;
+                }
+            }
+            &.bitbucket {
+                a {
+                    background-color: $bitbucket !important;
+                }
+            }
+            &.stack-overflow {
+                a {
+                    background-color: $stack-overflow !important;
+                }
+            }
+            &.hacker-news {
+                a {
+                    background-color: $hacker-news !important;
+                }
+            }
+            &.xing {
+                a {
+                    background-color: $xing !important;
+                }
+            }
+            &.instagram {
+                a {
+                    background-color: $instagram !important;
+                }
+            }
+            &.quora {
+                a {
+                    background-color: $quora !important;
+                }
+            }
+            &.openid {
+                a {
+                    background-color: $openid !important;
+                }
+            }
+            &.steam {
+                a {
+                    background-color: $steam !important;
+                }
+            }
+            &.amazon {
+                a {
+                    background-color: $amazon !important;
+                }
+            }
+        }
+    }
+}

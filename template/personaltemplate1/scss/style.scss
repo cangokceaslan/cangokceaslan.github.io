@@ -1,0 +1,86 @@
+/*********************************************************************************
+
+	Template Name: Okomo - Creative Portfolio Template  
+	Description: Okomo is a creative theme with unique style. You can build your perfect & professional agency work with OKOMO. So lets do something new if you love to build attractive & effective creative portfolio website.
+	Version: 1.1
+
+	Note: This is style css.
+
+**********************************************************************************/
+
+
+
+/**************************************************************
+	
+	STYLESHEET INDEXING
+	|
+	|
+	|___ Basic Styles
+	|	|
+	|	|___ Reset Styles
+	|	|___ Typography Styles
+	|	|___ Utility Styles	
+	|	|___ Animations	
+	|
+	|
+	|___Elements Styles
+	|	|___ Button Styles
+	|	|___ Section Title
+	|	|___ Social Links Styles
+	|	|___ Breadcrumb Styles
+	|	|___ Progress Styles
+	|	|___ Team Styles
+	|
+	|
+	|___Blocks Styles
+	|	|___ Header Styles 
+	|	|___ Fullscreen Menu
+	|	|___ Imagemenu Styles
+	|	|___ About Me Styels
+	|	|___ About Us Styles
+	|	|___ Portfolio Styles
+	|	|___ Portfolio Details
+	|	|___ Blog Styles
+	|	|___ Blog Area Styles
+	|	|___ Blog Details
+	|	|___ Commentlist Styles
+	|	|___ Contact Styles
+	|	|___ Testimonial Styles
+	|	|___ Brand Logo Styles
+	|
+	|
+	|___ END STYLESHEET INDEXING
+
+***************************************************************/
+
+
+
+@import 'variables';
+@import 'mixins';
+
+@import 'basic/reset';
+@import 'basic/typography';
+@import 'basic/utilities';
+@import 'basic/animations';
+
+@import 'elements/button';
+@import 'elements/section-title';
+@import 'elements/social-links';
+@import 'elements/breadcrumb';
+@import 'elements/progress';
+@import 'elements/team';
+
+@import 'blocks/header';
+@import 'blocks/fullscreen-menu';
+@import 'blocks/imgmenu';
+@import 'blocks/about-me';
+@import 'blocks/about-us';
+@import 'blocks/portfolio';
+@import 'blocks/portfolio-details';
+@import 'blocks/blog';
+@import 'blocks/blog-area';
+@import 'blocks/blog-details';
+@import 'blocks/commentlist';
+@import 'blocks/contact';
+@import 'blocks/testimonial';
+@import 'blocks/brand-logo';

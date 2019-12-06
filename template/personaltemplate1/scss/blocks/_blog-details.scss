@@ -1,0 +1,240 @@
+/**
+* Blog Details
+*/
+
+.blog-details{
+    padding-top: 23px;
+
+    .blog-details-title{
+        @include clearfix();
+        font-size: 24px;
+        font-weight: 700;
+        color: $heading-color;
+        font-family: $body-font;
+        padding-bottom: 15px;
+        line-height: 39px;
+    }
+
+    .plyr__control--overlaid{
+        padding: 22px;
+        background: #ffffff;
+        svg{
+            fill: $color-skyblue;
+        }
+    }
+
+    blockquote{
+        margin-top: 35px;
+        margin-bottom: 30px;
+    }
+
+    img{
+        margin-bottom: 25px;
+        margin-top: 15px;
+        & + img{
+            margin-left: 5px;
+        }
+    }
+
+}
+
+
+.blog-details-metacontent{
+    @include clearfix();
+    padding-top: 30px;
+    padding-bottom: 0;
+    h6, ul{
+        display: inline-block;
+    }
+    h6{
+        padding-right: 30px;
+    }
+    ul{
+        float: right;
+        margin-top: 15px;
+    }
+}
+
+
+.blog-details-share-tags{
+    @include clearfix();
+    padding-top: 30px;
+}
+
+.blog-item-share{
+    float: left;
+}
+
+.blog-details-tags{
+    float: right;
+    font-size: 14px;
+    ul{
+        display: inline-block;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        li{
+            display: inline-block;
+            font-size: 14px;
+            &::after{
+                content: ",";
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+            }
+            a{
+                color: $heading-color;
+                &:hover{
+                    color: $color-skyblue;
+                }
+            }
+        }
+    }
+}
+
+@media #{$xs-layout}{
+    .blog-details-metacontent ul{
+        float: none;
+    }
+}
+
+.blog-details-navigation{
+    display: flex;
+    justify-content: space-between;
+    background: #f6f6f6;
+    padding: 10px 30px;
+    margin-top: 45px;
+
+    a{
+        color: $heading-color;
+        font-weight: 700;
+        font-family: $body-font;
+        padding: 7px 0;
+        &:hover{
+            color: $color-skyblue;
+        }
+    }
+
+    .navigation-prev{
+        i{
+            padding-right: 10px;
+        }
+    }
+
+    .navigation-next{
+        i{
+            padding-left: 10px;
+        }
+    }
+
+}
+
+.blog-details-author-wrap{
+    border-bottom: 4px solid #f6f6f6;
+}
+
+.blog-details-author{
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.blog-details-author-thumb{
+    height: 190px;
+    width: 190px;
+    display: inline-block;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    img{
+        width: 100%;
+    }
+}
+
+.blog-details-author-quote{
+    margin-bottom: 15px;
+}
+
+.blog-details-author-content{
+    h6{
+        font-size: 16px;
+        color: $heading-color;
+        font-family: $body-font;
+        font-weight: 600;
+    }
+}
+
+.blog-details-commentlist-wrap{
+    padding: 50px 0;
+    border-bottom: 4px solid #f6f6f6;
+}
+.blog-details-commentlist{
+    .single-comment{
+        &:first-of-type{
+            margin-top: 45px;
+        }
+    }
+}
+
+.blog-details-commentbox-wrap{
+    padding-top: 50px;
+    .commentbox{
+        padding-top: 10px;
+    }
+}
+
+.blog-details{
+    .plyr--video{
+        margin-top: 35px;
+    }
+}
+
+@media #{$xlg-layout}{
+    .blog-details{
+        padding-top: 0;
+    }
+}
+
+@media #{$lg-layout}{
+    .blog-details{
+        padding-top: 0;
+        img{
+            margin-left: 0;
+            margin-right: 10px;
+            & + img{
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media #{$md-layout}{
+    .blog-details{
+        padding-top: 0;
+    }
+}
+
+@media #{$sm-layout}{
+    .blog-details{
+        padding-top: 0;
+        img{
+            margin-left: 0;
+            margin-right: 10px;
+            & + img{
+                margin-left: 0;
+            }
+        }
+    }
+    .blog-details-author {
+        text-align: center;
+        padding: 50px 15px;
+    }
+    .blog-details .blog-details-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog-details-metacontent ul{
+        margin-top: 0;
+    }
+}
