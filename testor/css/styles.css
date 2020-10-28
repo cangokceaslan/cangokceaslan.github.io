@@ -12,7 +12,8 @@
  */
  /* #343a40*/
 :root {
-  --primary-color:#04253A;
+  /* --primary-color:#04253A; */
+  --primary-color:#202731;
   --secondary-color: #608BA4;
   --blue: #007bff;
   --indigo: #6610f2;
@@ -577,14 +578,20 @@ pre code {
 
 } */
 .bannerVideo{
-  border: 3px solid var(--primary-color);
   position:fixed;
-  bottom:5px;
-  right:5px;
+  bottom:20px;
+  right:20px;
   width:400px;
-  height:auto;
-  -webkit-box-shadow: -1px 4px 24px -3px #000000; 
-  box-shadow: -1px 4px 24px -3px #000000;
+  height:225px;
+  margin:0px;
+  padding:0px;
+  -webkit-box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
+box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
+}
+#closeVideo:hover {
+    animation: shake;
+    animation-duration: 2s;
 }
  video[poster]{
    border: inherit;
@@ -4119,8 +4126,15 @@ input[type=button].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
-    .bannerVideo{
+    #bottomBanner{
     display: none;
+  }
+  nav{
+    box-shadow: none !important;
+  }
+  .top-udemy{
+    margin-top:9px;
+    box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
   }
 }
 @media (min-width: 576px) {
