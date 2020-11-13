@@ -14,7 +14,7 @@
 :root {
   /* --primary-color:#04253A; */
   /* --primary-color:#202731; */
-  --primary-color:#05264c;
+  --primary-color:black;
   --secondary-color: #608BA4;
   --blue: #007bff;
   --indigo: #6610f2;
@@ -2017,6 +2017,11 @@ box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
   .table-responsive-md > .table-bordered {
     border: 0;
   }
+  .top-udemy{
+    margin-top:9px;
+    box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
+    z-index: 9999;
+  }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -2027,6 +2032,11 @@ box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
   }
   .table-responsive-lg > .table-bordered {
     border: 0;
+  }
+  .top-udemy{
+    margin-top:9px;
+    box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
+    z-index: 9999;
   }
 }
 @media (max-width: 1199.98px) {
@@ -4180,6 +4190,11 @@ input[type=button].btn-block {
 .navbar-expand-md > .container-xl {
     padding-right: 0;
     padding-left: 0;
+  }
+  .top-udemy{
+    margin-top:9px;
+    box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
+    z-index: 9999;
   }
 }
 @media (min-width: 768px) {
