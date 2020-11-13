@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Can Gökçeaslan</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -44,9 +44,12 @@
         style="box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);z-index: 9000 !important;" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none mobile-header">Can Gökçeaslan</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                    src="https://instagram.fist13-1.fna.fbcdn.net/v/t51.2885-19/s320x320/118367462_997432657350092_8572045597208152783_n.jpg?_nc_ht=instagram.fist13-1.fna.fbcdn.net&_nc_ohc=PylWm_GO3-sAX8oQlss&oh=0190e1ab2d850425cb552c404b29df84&oe=5FC1C5C3"
-                    alt="" /></span>
+            <span class="d-none d-lg-block">
+                <div class="animate__animated animate__heartBeat">
+                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="./assets/img/profile.jpg"
+                        alt="" />
+                </div>
+            </span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -66,17 +69,44 @@
     <!-- Page Content-->
     <div class="container-fluid p-0">
         <!-- About-->
-        <section class="resume-section" id="about">
+        <section class="resume-section animate__animated animate__slideInLeft" id="about">
             <div class="resume-section-content">
-                <h1 class="mb-0">
+                <div class="animate__animated animate__heartBeat">
+                    <img class="img-fluid img-profile rounded-circle" id="mini-image" style="display: none;"
+                        src="./assets/img/profile.jpg" alt="" />
+                </div>
+                <script>
+                    var doc = document;
+                    var win = window;
+                    let elementMini = document.getElementById('mini-image');
+                    if (win.innerWidth >= 992) {
+                        elementMini.style.display = "none";
+                    } else {
+                        elementMini.style.display = "block";
+                    }
+                    function winResize(e) {
+                        let elementMini = document.getElementById('mini-image');
+                        if (win.innerWidth >= 992) {
+                            elementMini.style.display = "none";
+                        } else {
+                            elementMini.style.display = "block";
+                        }
+                    }
+                    let winResizer = winResize.bind(document)
+
+                    window.addEventListener("resize", winResizer);
+                </script>
+                <h1 class="mb-0 ">
                     Can
                     <span class="text-primary">Gökçeaslan</span>
                 </h1>
-                <div class="subheading mb-5">
+                <div class="subheading mb-5 ">
                     UDEMY · YOUTUBE · UPWORK ·
                     <a href="mailto:name@email.com">cangokceaslanx@gmail.com</a>
                 </div>
-                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for
+                <p class="lead mb-5 ">I am experienced in leveraging agile
+                    frameworks
+                    to provide a robust synopsis for
                     high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to
                     further the overall value proposition.</p>
                 <div class="social-icons">

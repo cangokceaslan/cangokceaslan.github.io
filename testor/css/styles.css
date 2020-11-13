@@ -13,7 +13,8 @@
  /* #343a40*/
 :root {
   /* --primary-color:#04253A; */
-  --primary-color:#202731;
+  /* --primary-color:#202731; */
+  --primary-color:#05264c;
   --secondary-color: #608BA4;
   --blue: #007bff;
   --indigo: #6610f2;
@@ -631,6 +632,7 @@ box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
   padding-left: 0.75rem;
   margin-right: auto;
   margin-left: auto;
+  background-color: white;
 }
 
 @media (min-width: 576px) {
@@ -10134,6 +10136,9 @@ p.lead {
     max-width: 10rem;
     max-height: 10rem;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    -webkit-box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
+box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -10152,6 +10157,19 @@ p.lead {
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
   }
+}
+#mini-image{
+  /* border:6px solid var(--primary-color); */
+  position: relative;
+  margin-bottom: 40px;
+  left:50% !important;
+  margin-top:-50px;
+  transform: translateX(-50%);
+  height:200px; 
+  width:200px;
+  -webkit-box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
+box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
 }
 .social-icons .social-icon {
   display: inline-flex;
