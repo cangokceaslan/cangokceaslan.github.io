@@ -10183,6 +10183,7 @@ box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
   border-radius: 100%;
   font-size: 1.5rem;
   margin-right: 1.5rem;
+  margin-bottom:1.5rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
