@@ -2020,7 +2020,6 @@ box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
   .top-udemy{
     margin-top:9px;
     box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
-    z-index: 9999;
   }
 }
 @media (max-width: 991.98px) {
@@ -2036,7 +2035,6 @@ box-shadow: -1px 2px 71px 0px rgba(0,0,0,0.75);
   .top-udemy{
     margin-top:9px;
     box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
-    z-index: 9999;
   }
 }
 @media (max-width: 1199.98px) {
@@ -4194,7 +4192,6 @@ input[type=button].btn-block {
   .top-udemy{
     margin-top:9px;
     box-shadow: 0px 2px 28px 1px rgba(0,0,0,0.68);
-    z-index: 9999;
   }
 }
 @media (min-width: 768px) {
@@ -10178,7 +10175,7 @@ box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
   position: relative;
   margin-bottom: 40px;
   left:50% !important;
-  margin-top:-50px;
+  margin-top:0px;
   transform: translateX(-50%);
   height:200px; 
   width:200px;
@@ -10209,7 +10206,15 @@ box-shadow: -2px 0px 47px -3px rgba(0,0,0,0.75);
 .dev-icons {
   font-size: 3rem;
 }
-
+section.resume-section-1 {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  max-width: 75rem;
+}
 section.resume-section {
   display: flex;
   align-items: center;
@@ -10222,14 +10227,26 @@ section.resume-section {
 section.resume-section .resume-section-content {
   width: 100%;
 }
+section.resume-section-1 .resume-section-content {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   section.resume-section {
     min-height: 100vh;
   }
+  section.resume-section-1 {
+    min-height: 300px;
+  }
 }
 @media (min-width: 992px) {
   section.resume-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  section.resume-section-1 {
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 5rem;
