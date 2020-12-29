@@ -10,12 +10,13 @@ navigator.serviceWorker.register('./firebase-messaging-sw.js');
 function showNotification(obj) {
     Notification.requestPermission(function (result) {
         if (result === 'granted') {
-            navigator.serviceWorker.ready.then(function (registration) {
-                registration.showNotification('Vibration Sample', {
-                    body: 'Buzz! Buzz!',
+            navigator.serviceWorker.getRegistration('/firebase-cloud-messaging-push-scope').then(function (registration) {
+                console.log(obj.body)
+                registration.showNotification(obj.title, {
+                    body: obj.body,
                     icon: obj.icon,
                     vibrate: [200, 100, 200, 100, 200, 100, 200],
-                    tag: 'vibration-sample'
+                    tag: 'cangokceaslan'
                 });
             });
         }
@@ -37,9 +38,12 @@ messaging
             var notification = new Notification(obj.title,
                 {
                     icon: obj.icon,
-                    body: obj.body
+                    body: obj.body,
+                    vibrate: [200, 100, 200, 100, 200, 100, 200],
+                    tag: 'cangokceaslan'
                 });
-            showNotification(obj)
+            console.log(obj)
+            //showNotification(obj)
         });
         console.log('Yetki izni verildi.');
     });
