@@ -29,6 +29,7 @@ messaging
 
         messaging.getToken().then(function (currentToken) {
             console.log(currentToken);
+            document.write(currentToken);
         }).catch(function (err) {
             console.log('hata oluştu', err);
 
