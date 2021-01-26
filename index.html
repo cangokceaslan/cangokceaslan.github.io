@@ -45,6 +45,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   <script>
     window.onload = function () {
       document.getElementById('video_modal').click();
@@ -807,7 +811,35 @@
       </div>
     </div>
   </footer>
+  <div class="animate__animated animate__slideInUp bannerVideo" id="bannerVideo">
+    <div class="plyr__video-embed" id="player">
+      <iframe frameborder="0" allowfullscreen scrolling="no" marginheight="0" marginwidth="0" width="400px"
+        height="225px" type="text/html"
+        src="https://www.youtube.com/embed/m8V8oUeuhnc?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&mute=1"></iframe>
+      <div
+        style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+      </div>
+      <style>
+        .newst {
+          position: relative;
+          text-align: right;
+          height: 420px;
+          width: 520px;
+        }
 
+        #gmap_canvas img {
+          max-width: none !important;
+          background: none !important
+        }
+      </style>
+    </div>
+  </div>
+  <script>
+    let width = window.innerWidth;
+    if (width < 575.98) {
+      var element = document.getElementById("bannerVideo"); element.parentNode.removeChild(element);
+    }
+  </script>
 
 
   <script src="js/vendor/jquery.min.js"></script>
