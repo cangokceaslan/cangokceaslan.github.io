@@ -22,7 +22,7 @@ body {
    background-color: #EB5352 !important;
    width: 100%;
    height:40px;
-   top:90px
+   top:80px
 }
 .p1-gradient-bg, .thumb .overlay-bg {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
