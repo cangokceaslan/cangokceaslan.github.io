@@ -20,9 +20,9 @@
   </script>
   <meta name='dailymotion-domain-verification' content='dm5dxeo3ttf97ivqw' />
   <meta name="theme-color" content="#ff0000">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.jpg">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Can Gökçeaslan - Website ve Aplikasyon Geliştirici</title>
@@ -56,10 +56,31 @@
       font-size: 20px;
     }
   </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: 'Cairo', sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    #vid>div>div {
+      -webkit-box-shadow: -2px 1px 35px -13px rgba(0, 0, 0, 0.53);
+      -moz-box-shadow: -2px 1px 35px -13px rgba(0, 0, 0, 0.53);
+      box-shadow: -2px 1px 35px -13px rgba(0, 0, 0, 0.53);
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-  <button style="display:none;" type="button" class="btn btn-primary" id="video_modal" data-toggle="modal"
+  <!-- <button style="display:none;" type="button" class="btn btn-primary" id="video_modal" data-toggle="modal"
     data-target="#exampleModal">
     Can Gökçeaslan ile Yazılım Öğreniyorum
   </button>
@@ -90,8 +111,9 @@
         </div>
       </div>
     </div>
-  </div>
-  <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" style="min-height:80px;" id="pb-navbar">
+  </div> -->
+  <nav class="navbar navbar-expand-lg site-navbar navbar-dark bg-dark"
+    style="background-color: black !important;min-height:80px;z-index: 9999;" id="pb-navbar">
 
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
@@ -99,11 +121,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand" href="index.html" title="Can Gökçeaslan" style="font-weight:bold">Can Gökçeaslan</a>
+      <a class="navbar-brand" href="index.html" title="Can Gökçeaslan"
+        style="font-size:22px !important;letter-spacing: 0.7px;">Can
+        Gökçeaslan</a>
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
         <style>
           #urls>li>a {
             font-weight: bold !important;
+            letter-spacing: 0px;
+            font-size: 20px;
+            text-transform: none;
+            color: white !important
           }
         </style>
         <ul class="navbar-nav" id="urls" style="margin-top:10px;">
@@ -124,24 +152,36 @@
       </div>
     </div>
   </nav>
+  <div class="top-udemy">
+    <div role="button" onclick="window.open('https://www.udemy.com/user/cangokceaslan','__blank')"
+      style="padding:0px;width:100%;text-align:center;font-family: 'Lato', sans-serif;position: absolute;left:50%; top:50%;transform: translate(-50%,-50%);">
+      Udemy Kurslarım için Tıklayın
+    </div>
+  </div>
 
 
 
 
   <section class="site-hero"
-    style="background-image:linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(images/cangokceaslan.webp);"
+    style="background-image:linear-gradient(0deg,rgba(0,0,0,0),rgba(0,0,0,0)), url(images/background1.jpg);"
     id="section-home" data-stellar-background-ratio="0.5">
     <div class="container">
       <div class="row intro-text align-items-center justify-content-center">
         <div class="col-md-10 text-center">
-          <h1 class="site-heading site-animate" style="color:white; font-size: 60px;">Merhabalar ben <strong>Can
+          <h1 class="site-heading site-animate" style="color:white;  line-height: 55px;"><strong>Can
               Gökçeaslan</strong></h1>
-          <p class="lead site-subheading mb-4 site-animate" style="color:white; font-size: 25px;">Yazılım ve Analiz
-            Alanında Videolar Çekmekteyim. Aşağıdaki Butona Tıklayarak Abone Olabilirsiniz !</p>
-          <p><a href="https://youtube.com/cangokceaslan?sub_confirmation=1"
+          <h2 class="lead site-subheading mb-4 site-animate" style="color:white;   line-height: 45px;"><strong
+              style="font-size: 25px;">Websiteme hoş geldin. Ben Can Gökçeaslan. Bu sayfada bana ait bazı bilgileri
+              bulabilirsin. Benimle iletişim kurmak için hemen <a target="__blank"
+                href="https://ink.cangokceaslan.com/?source=cangokceaslan.com"
+                style="color:azure; letter-spacing: 0px;font-weight: bold !important;" id="tikla">
+                buraya tıklayın
+              </a></strong>
+          </h2>
+          <!-- <p><a href="https://youtube.com/cangokceaslan?sub_confirmation=1"
               class="smoothscroll btn btn-primary px-4 py-3"
               style="max-width:50%;width:200px;padding:100px;height:100px;font-weight:bold;background:red;"
-              target="__blank"><i class="fa fa-youtube-play fa-4x"></i></a></p>
+              target="__blank"><i class="fa fa-youtube-play fa-4x"></i></a></p> -->
         </div>
       </div>
     </div>
@@ -150,31 +190,49 @@
 
   <section class="site-section" id="section-about">
     <div class="container">
+
       <div class="row mb-5 align-items-center">
-        <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-          <img src="images/cangokceaslan-long.webp" alt="Can Gökçeaslan Uzun Fotoğraf" class="img-fluid">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center">
+            <h2 style="letter-spacing: -0.5px !important;font-weight: bold;">Ben Kimim?</h2>
+          </div>
+        </div>
+        <div class="col-lg-6 pr-lg-5 mb-5 mb-lg-0">
+          <img src="images/gokceaslan.jpg" alt="Can Gökçeaslan Uzun Fotoğraf" class="img-fluid">
         </div>
         <div class="col-lg-5 pl-lg-5">
-          <div class="section-heading">
-            <h2>Ben <strong>Kimim?</strong></h2>
-          </div>
+          <!--           <div class="section-heading" style="letter-spacing: 0.7px !important;">
+            <h2 style="font-weight: bold;">Ben Kimim?</h2>
+          </div> -->
           <p class="lead" style="color:gray;font-weight:400;"> Merhabalar, ben Can Gökçeaslan. Boğaziçi Üniversitesi
-            Fizik Bölümü 2019 mezunuyum. Güncel olarak Yazılım alanında çalışmaktayım. HTML, CSS, JavaScript, Bootstrap,
-            NodeJS, PHP, Python, Android Native (Java ile), React, Socket.io, ElectronJS, ExpressJS, Redux üzerinde
-            aktif olarak çalışabilmekteyim. Bunun dışında React Native ve C++ üzerinde hala gelişmekteyim.</p>
-          <p class="mb-5  "> -- Eğer Elinizde Sorununuzu Çözmek İçin Herhangi Bir Araç Yoksa Sorununuzu Yaratıcılıkla
-            Çözebilirsiniz.</p>
-
+            Fizik Bölümü 2020 mezunuyum. Fizik bölümü okumamdan dolayı her türlü nesne ve fikiri kolayca modelleme
+            yeteneğine sahibim. Fizik bölümünde okurken Yazılım alanına yönelmem gerektiğini düşündüm ve bu sebeple
+            bölümümüzde açılan Linux ve Python programlama dersini aldım. O günden sonra da kod yazmaktan asla
+            sıkılmadım. Şu anda da Yazılım alanında çalışmaktayım. Özellikle <b>HTML, CSS, JavaScript,
+              NodeJS, PHP, Python, Java</b> dilleriyle aktif olarak çalıştım. Bunların yanında <b>Android Native,
+              Bootstrap,
+              React, React Native,
+              Socket.io, ElectronJS, ExpressJS ve Redux</b> kullanan projeler geliştirdim. Data Crawling tarafında
+            <b>puppeteer /
+              pyppeteer, cURL ve Beautiful Soap</b> gibi yapıları aktif olarak kullandım. Analiz ve görselleştirme
+            alanlarında
+            <b>numpy, pandas, matplotlib, plotly </b> gibi yapılarla Fizik bölümünde deney analizleri yaparken çalıştım.
+            Bu
+            sebeple raporlama ve formülsel açıklamalar için yeterli <b>LaTeX</b> de bilmekteyim.
+          </p>
           <p>
             <a href="./cv/Can_Gokceaslan_CV_TR.pdf" title="Türkçe CV - Can Gökçeaslan"
-              class="btn btn-primary px-4 py-2 btn-sm smoothscroll" style="font-weight:bold;">Türkçe CV</a>
+              class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
+              style="font-weight:bold;background-color:#429089; border-color: #429089;">Türkçe CV</a>
             <a href="./cv/Can_Gokceaslan_CV_EN.pdf" title="English CV - Can Gokceaslan"
-              class="btn btn-secondary px-4 py-2 btn-sm" style="font-weight:bold;background-color:green;">English CV</a>
+              class="btn btn-secondary px-4 py-2 btn-sm"
+              style="font-weight:bold;background-color:#429089;margin-left:10px">English
+              CV</a>
           </p>
         </div>
       </div>
   </section>
-  <section class="site-section" id="section-skills" style="background:#f8f9fa!important;padding:0px;">
+  <!-- <section class="site-section" id="section-skills" style="background:#f8f9fa!important;padding:0px;">
     <div class="container">
       <div class="row pt-5">
         <div class="col-md-3 mb-3">
@@ -297,7 +355,7 @@
     <br />
     <br />
     </div>
-  </section>
+  </section> -->
 
   <!-- <section class="site-section bg-light">
       <div class="container">
@@ -537,93 +595,58 @@
     </section>
     -->
   <!-- .section -->
-  <!--
-    <section class="site-section bg-light " id="section-resume">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 mb-5">
-            <div class="section-heading text-center">
-              <h2>My <strong>Resume</strong></h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <h2 class="mb-5">Education</h2>
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Masteral in Information Technology</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">New York University</span>
-            </div>
 
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
-              <h1>Masteral in Information Technology</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">New York University</span>
-            </div>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Masteral in Information Technology</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">New York University</span>
-            </div>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present Deacember.</span>
-              <h1>Masteral in Information Technology</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">New York University</span>
-            </div>
-
-          </div>
-          <div class="col-md-6">
-            
-
-            <h2 class="mb-5">Experience</h2>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Lead Product Designer</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">Github</span>
-            </div>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Lead Product Designer</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">Facebook</span>
-            </div>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Lead Product Designer</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">Twitter</span>
-            </div>
-
-            <div class="resume-item mb-4">
-              <span class="date"><span class="icon-calendar"></span> March 2013 - Present</span>
-              <h1>Lead Product Designer</h1>
-              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-              <span class="school">Shopify</span>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section> 
-    -->
-  <!-- .section -->
-
-  <section class="site-section" id="section-video">
+  <section class="site-section bg-light " id="section-resume">
     <div class="container">
       <div class="row">
         <div class="col-md-12 mb-5">
           <div class="section-heading text-center">
-            <h2>Youtube <strong> Videolar</strong></h2>
+            <h2 style="letter-spacing: -0.5px !important;font-weight: bold;">Tecrübelerim ve Kısa Özgeçmişim</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-5" style="font-weight:400;text-align: center;">Eğitimim:</h2>
+          <div class="resume-item mb-4" style="border:2px solid white !important">
+            <span class="date"><span class="icon-calendar"></span> Ocak 2014 - Ocak 2020</span>
+            <h1 style="font-weight: bold;">Fizik Bölümü</h1>
+            <p>Boğaziçi Üniversitesi Fizik bölümünden 2020 yılında mezun oldum. Fizik dalı altında Computational Fizik
+              opsiyonu ve İşletme yan opsiyonundan dersler alarak çalışmalar yaptım.</p>
+            <span class="school">Boğaziçi Üniversitesi</span>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-5" style="font-weight:400;text-align: center;">Tecrübelerim:</h2>
+          <div class="resume-item mb-4" style="border:2px solid white !important">
+            <span class="date"><span class="icon-calendar"></span> Aralık 2019 - Şu anda</span>
+            <h1 style="font-weight: bold;">FullStack JavaScript Developer</h1>
+            <p>Barty App bünyesinde kurucu ortak ve FullStack JavaScript Developer olarak çalışmaktayım. Barty
+              içerisinde MERN Stack kullanarak hem mobil app hem de web servisleri geliştirmekteyim </p>
+            <span class="school">Barty App (<a href="https://www.barty.app"
+                style="font-weight: bold;">Barty.app</a>)</span>
+          </div>
+          <div class="resume-item mb-4" style="border:2px solid white !important">
+            <span class="date"><span class="icon-calendar"></span> Kasım 2019 - Şu anda</span>
+            <h1 style="font-weight: bold;">Udemy Online Yazılım Eğitmenliği</h1>
+            <p>Udemy üzerinde toplam 32 bin kişinin kayıt olduğu 2 adet kursum bulunmaktadır. Kurslarım aracılığı ile
+              genç yazılımcılarla tanışıp onları yönlendirmeyi amaçlamaktayım.</p>
+            <span class="school">Udemy (<a href="https://www.udemy.com/user/cangokceaslan"
+                style="font-weight: bold;">Udemy
+                Profilim</a>)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- .section -->
+
+  <!-- <section class="site-section" id="section-video">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-5">
+          <div class="section-heading text-center">
+            <h2 style="letter-spacing: 0px;">Youtube <strong> Videolar</strong></h2>
           </div>
         </div>
       </div>
@@ -633,16 +656,17 @@
           <div class="blog-entry">
             <iframe width="100%" height="195" src="https://www.youtube.com/embed/PuNsEKL1Zk0" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- <a href="#"><img src="images/post_1.jpg" alt="Image placeholder" class="img-fluid"></a> -->
             <div class="blog-entry-text">
               <h1 class="font-weight-bold"><a href="https://www.youtube.com/embed/PuNsEKL1Zk0"
                   title="NASA'nın Uydu Görüntüleri API'nı Kullanarak JS ile AJAX istekleri atıyoruz ve gelen veriyi sayfaya atıyoruz."
-                  style="color:black !important;">NASA'nın API'ını Kullanarak JS Ajax Öğreniyoruz</a></h1>
+                  style="color:black !important;"><strong style="font-size: 22px;">NASA'nın API'ını Kullanarak JS Ajax
+                    Öğreniyoruz</strong></a>
+              </h1>
               <p class="mb-4">NASA'nın Uydu Görüntüleri API'nı Kullanarak JS ile AJAX istekleri atıyoruz ve gelen veriyi
                 sayfaya atıyoruz.</p>
               <div class="meta">
-                <a href="#" title="Can Gökçeaslan"><span class="icon-calendar"></span> 12 Temmuz 2019</p>
-                  <a href="#" title="Can Gökçeaslan"><span class="fa fa-thumbs-up"></span> 5 Beğeni</a>
+                <a href="#" title="Can Gökçeaslan"><span class="icon-calendar"></span> 15 Temmuz 2019</a>
+                <a href="#" title="Can Gökçeaslan"><span class="fa fa-thumbs-up"></span> 29 Beğeni</a>
               </div>
             </div>
           </div>
@@ -652,11 +676,11 @@
           <div class="blog-entry">
             <iframe width="100%" height="195" src="https://www.youtube.com/embed/RLuchS2RX7M" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- <a href="#"><img src="images/post_2.jpg" alt="Image placeholder" class="img-fluid"></a> -->
             <div class="blog-entry-text">
               <h1 class="font-weight-bold"><a href="https://www.youtube.com/embed/RLuchS2RX7M"
                   title="PHP, MySQL ve JQuery kullanarak gerçek zamanlı bir mesajlaşma sistemi yazdık."
-                  style="color:black !important;">PHP, MySQL ve Jquery - Mesajlaşma Sistemi</a></h1>
+                  style="color:black !important;"><strong style="font-size: 22px;">PHP, MySQL ve Jquery - Mesajlaşma
+                    Sistemi</strong></a></h1>
               <p class="mb-4">PHP, MySQL ve JQuery kullanarak gerçek zamanlı bir mesajlaşma sistemi yazdık. (Kullanmanız
                 Önerilmez)</p>
               <div class="meta">
@@ -671,11 +695,11 @@
           <div class="blog-entry">
             <iframe width="100%" height="195" src="https://www.youtube.com/embed/WYrHY4sxTnQ" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <!-- <a href="#"><img src="images/post_3.jpg" alt="Image placeholder" class="img-fluid"> </a> -->
             <div class="blog-entry-text">
               <h1 class="font-weight-bold"><a href="https://www.youtube.com/embed/WYrHY4sxTnQ"
                   title="HTML, CSS, JS Kullanarak ElectronJS Kütüphanesini Kullanarak Masaüstü Uygulaması Yapmayı Öğrenebilirsiniz."
-                  style="color:black !important;">ElectronJS Kullanarak HTML, CSS, JS ile Desktop App</a></h1>
+                  style="color:black !important;"><strong style="font-size: 22px;">ElectronJS Kullanarak HTML, CSS, JS
+                    ile Desktop App</strong></a></h1>
               <p class="mb-4">HTML, CSS, JS Kullanarak ElectronJS Kütüphanesini Kullanarak Masaüstü Uygulaması Yapmayı
                 Öğrenebilirsiniz.</p>
               <div class="meta">
@@ -688,7 +712,7 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
   <!--
     <section class="site-section bg-light" id="section-contact">
         <div class="container">
