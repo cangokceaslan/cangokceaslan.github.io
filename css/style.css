@@ -5,6 +5,17 @@ body {
   font-size: 16px;
   font-weight: 300; 
 }
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+  font-weight: bold !important;
+  margin:-0.5px;
+}
 #tikla{
   color:white !important;
   font-weight: bolder;
