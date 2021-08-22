@@ -12,21 +12,58 @@
     </url>
    <url>
 
-      <loc>https://www.cangokceaslan.com/cv/Can_Gokceaslan_CV_TR.pdf</loc>
+      <loc>https://www.cangokceaslan.com/#section-about</loc>
 
       <changefreq>daily</changefreq>
 
-      <priority>0.9</priority>
+      <priority>0.6</priority>
 
    </url>
 
    <url>
 
-      <loc>https://www.cangokceaslan.com/cv/Can_Gokceaslan_CV_EN.pdf</loc>
+      <loc>https://www.cangokceaslan.com/#section-resume</loc>
 
       <changefreq>daily</changefreq>
 
-      <priority>0.9</priority>
+      <priority>0.6</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://www.cangokceaslan.com/#section-footer</loc>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.linkedin.com/in/cangokceaslan</loc>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.instagram.com/cangokceaslan</loc>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+   <url>
+
+      <loc>https://www.udemy.com/user/cangokceaslan</loc>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
 
    </url>
 
