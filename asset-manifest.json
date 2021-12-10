@@ -1,5 +1,6 @@
 {
   "files": {
+<<<<<<< Updated upstream
     "main.css": "/static/css/main.e0686e83.chunk.css",
     "main.js": "/static/js/main.a2a402e5.chunk.js",
     "main.js.map": "/static/js/main.a2a402e5.chunk.js.map",
@@ -12,14 +13,43 @@
     "index.html": "/index.html",
     "static/css/main.e0686e83.chunk.css.map": "/static/css/main.e0686e83.chunk.css.map",
     "static/js/2.7d2227d8.chunk.js.LICENSE.txt": "/static/js/2.7d2227d8.chunk.js.LICENSE.txt",
+=======
+    "main.css": "/static/css/main.1a018273.chunk.css",
+    "main.js": "/static/js/main.8e88cb48.chunk.js",
+    "main.js.map": "/static/js/main.8e88cb48.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ea39ceaf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ea39ceaf.js.map",
+    "static/js/2.466a1975.chunk.js": "/static/js/2.466a1975.chunk.js",
+    "static/js/2.466a1975.chunk.js.map": "/static/js/2.466a1975.chunk.js.map",
+    "static/js/3.e0bf5ea8.chunk.js": "/static/js/3.e0bf5ea8.chunk.js",
+    "static/js/3.e0bf5ea8.chunk.js.map": "/static/js/3.e0bf5ea8.chunk.js.map",
+    "static/js/4.35fc1c5d.chunk.js": "/static/js/4.35fc1c5d.chunk.js",
+    "static/js/4.35fc1c5d.chunk.js.map": "/static/js/4.35fc1c5d.chunk.js.map",
+    "static/js/5.755a8899.chunk.js": "/static/js/5.755a8899.chunk.js",
+    "static/js/5.755a8899.chunk.js.map": "/static/js/5.755a8899.chunk.js.map",
+    "static/js/6.d5c62707.chunk.js": "/static/js/6.d5c62707.chunk.js",
+    "static/js/6.d5c62707.chunk.js.map": "/static/js/6.d5c62707.chunk.js.map",
+    "static/js/7.690c4002.chunk.js": "/static/js/7.690c4002.chunk.js",
+    "static/js/7.690c4002.chunk.js.map": "/static/js/7.690c4002.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1a018273.chunk.css.map": "/static/css/main.1a018273.chunk.css.map",
+    "static/js/2.466a1975.chunk.js.LICENSE.txt": "/static/js/2.466a1975.chunk.js.LICENSE.txt",
+>>>>>>> Stashed changes
     "static/media/index.scss": "/static/media/tv.a228a20f.gif",
     "static/media/background1.a9713917.mp4": "/static/media/background1.a9713917.mp4",
-    "static/media/medium.b29b88aa.png": "/static/media/medium.b29b88aa.png"
+    "static/media/medium.png": "/static/media/medium.b29b88aa.png"
   },
   "entrypoints": [
+<<<<<<< Updated upstream
     "static/js/runtime-main.fef3ca98.js",
     "static/js/2.7d2227d8.chunk.js",
     "static/css/main.e0686e83.chunk.css",
     "static/js/main.a2a402e5.chunk.js"
+=======
+    "static/js/runtime-main.ea39ceaf.js",
+    "static/js/2.466a1975.chunk.js",
+    "static/css/main.1a018273.chunk.css",
+    "static/js/main.8e88cb48.chunk.js"
+>>>>>>> Stashed changes
   ]
 }
