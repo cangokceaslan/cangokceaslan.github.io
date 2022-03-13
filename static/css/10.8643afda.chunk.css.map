@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/NewCourse/index.scss"],"names":[],"mappings":"AACI,oCADJ,kBAEQ,gBAAA,CAAA","file":"10.8643afda.chunk.css","sourcesContent":[".new-course-video {\r\n    @media screen and (min-width: 992px) {\r\n        margin-left: 90px;\r\n    }\r\n}\r\n"]}
