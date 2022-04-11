@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d2578600.chunk.css",
-    "main.js": "/static/js/main.2e583b2e.chunk.js",
-    "main.js.map": "/static/js/main.2e583b2e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7ce66028.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7ce66028.js.map",
+    "main.js": "/static/js/main.8338145e.chunk.js",
+    "main.js.map": "/static/js/main.8338145e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b9ac0030.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b9ac0030.js.map",
     "static/js/2.916b89fb.chunk.js": "/static/js/2.916b89fb.chunk.js",
     "static/js/2.916b89fb.chunk.js.map": "/static/js/2.916b89fb.chunk.js.map",
     "static/css/3.60a4805e.chunk.css": "/static/css/3.60a4805e.chunk.css",
-    "static/js/3.33e6bdf0.chunk.js": "/static/js/3.33e6bdf0.chunk.js",
-    "static/js/3.33e6bdf0.chunk.js.map": "/static/js/3.33e6bdf0.chunk.js.map",
+    "static/js/3.7217bf69.chunk.js": "/static/js/3.7217bf69.chunk.js",
+    "static/js/3.7217bf69.chunk.js.map": "/static/js/3.7217bf69.chunk.js.map",
     "static/css/4.914a3a9b.chunk.css": "/static/css/4.914a3a9b.chunk.css",
     "static/js/4.eb50deaa.chunk.js": "/static/js/4.eb50deaa.chunk.js",
     "static/js/4.eb50deaa.chunk.js.map": "/static/js/4.eb50deaa.chunk.js.map",
@@ -59,17 +59,17 @@
     "static/css/main.d2578600.chunk.css.map": "/static/css/main.d2578600.chunk.css.map",
     "static/js/13.577ae663.chunk.js.LICENSE.txt": "/static/js/13.577ae663.chunk.js.LICENSE.txt",
     "static/js/2.916b89fb.chunk.js.LICENSE.txt": "/static/js/2.916b89fb.chunk.js.LICENSE.txt",
-    "static/media/GitHub.d83837d1.jpg": "/static/media/GitHub.d83837d1.jpg",
+    "static/media/GitHub.ee3fbf50.webp": "/static/media/GitHub.ee3fbf50.webp",
     "static/media/App.scss": "/static/media/sf-compact-display-thin.613e216f.woff",
-    "static/media/Iyzico.5d514901.jpg": "/static/media/Iyzico.5d514901.jpg",
-    "static/media/NodeJs.d9f716f3.jpg": "/static/media/NodeJs.d9f716f3.jpg",
-    "static/media/Udemy3.e1d54f82.jpg": "/static/media/Udemy3.e1d54f82.jpg",
+    "static/media/Iyzico.6a349551.webp": "/static/media/Iyzico.6a349551.webp",
+    "static/media/NodeJs.631fe5f6.webp": "/static/media/NodeJs.631fe5f6.webp",
+    "static/media/Udemy.b294c6c9.webp": "/static/media/Udemy.b294c6c9.webp",
     "static/media/github-white.ad22d330.png": "/static/media/github-white.ad22d330.png",
     "static/media/github1.746ec8f0.png": "/static/media/github1.746ec8f0.png",
     "static/media/index.scss": "/static/media/tv.a228a20f.gif",
     "static/media/iyzico.780fae32.jpg": "/static/media/iyzico.780fae32.jpg",
-    "static/media/logo9.f51b25c7.png": "/static/media/logo9.f51b25c7.png",
-    "static/media/me-as-instructor.553658e6.png": "/static/media/me-as-instructor.553658e6.png",
+    "static/media/logo9.c0fd3566.webp": "/static/media/logo9.c0fd3566.webp",
+    "static/media/me-as-instructor.f39b8064.webp": "/static/media/me-as-instructor.f39b8064.webp",
     "static/media/medium.b29b88aa.png": "/static/media/medium.b29b88aa.png",
     "static/media/social.1b828f82.jpg": "/static/media/social.1b828f82.jpg",
     "static/media/sub-image-cropped-final-minified1.983e0e80.webp": "/static/media/sub-image-cropped-final-minified1.983e0e80.webp",
@@ -77,9 +77,9 @@
     "static/media/udemy.ac64b9eb.svg": "/static/media/udemy.ac64b9eb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ce66028.js",
+    "static/js/runtime-main.b9ac0030.js",
     "static/js/2.916b89fb.chunk.js",
     "static/css/main.d2578600.chunk.css",
-    "static/js/main.2e583b2e.chunk.js"
+    "static/js/main.8338145e.chunk.js"
   ]
 }
