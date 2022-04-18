@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.096c567f.chunk.css",
-    "main.js": "/static/js/main.0d96854a.chunk.js",
-    "main.js.map": "/static/js/main.0d96854a.chunk.js.map",
+    "main.js": "/static/js/main.f8108012.chunk.js",
+    "main.js.map": "/static/js/main.f8108012.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fdf8c4cd.js",
     "runtime-main.js.map": "/static/js/runtime-main.fdf8c4cd.js.map",
     "static/js/2.a92cc720.chunk.js": "/static/js/2.a92cc720.chunk.js",
@@ -64,6 +64,7 @@
     "static/media/GitHub.ee3fbf50.webp": "/static/media/GitHub.ee3fbf50.webp",
     "static/media/Iyzico.6a349551.webp": "/static/media/Iyzico.6a349551.webp",
     "static/media/NodeJs.631fe5f6.webp": "/static/media/NodeJs.631fe5f6.webp",
+    "static/media/Redis.80aa79ad.jpg": "/static/media/Redis.80aa79ad.jpg",
     "static/media/Udemy.b294c6c9.webp": "/static/media/Udemy.b294c6c9.webp",
     "static/media/github-white.ad22d330.png": "/static/media/github-white.ad22d330.png",
     "static/media/github1.746ec8f0.png": "/static/media/github1.746ec8f0.png",
@@ -81,6 +82,6 @@
     "static/js/runtime-main.fdf8c4cd.js",
     "static/js/2.a92cc720.chunk.js",
     "static/css/main.096c567f.chunk.css",
-    "static/js/main.0d96854a.chunk.js"
+    "static/js/main.f8108012.chunk.js"
   ]
 }
