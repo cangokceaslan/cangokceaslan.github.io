@@ -4,8 +4,8 @@
     "static/js/0.ce36ca1a.chunk.js": "/static/js/0.ce36ca1a.chunk.js",
     "static/js/0.ce36ca1a.chunk.js.map": "/static/js/0.ce36ca1a.chunk.js.map",
     "main.css": "/static/css/main.9207805e.chunk.css",
-    "main.js": "/static/js/main.f5848ad8.chunk.js",
-    "main.js.map": "/static/js/main.f5848ad8.chunk.js.map",
+    "main.js": "/static/js/main.1e6bdb2d.chunk.js",
+    "main.js.map": "/static/js/main.1e6bdb2d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ff8d2d01.js",
     "runtime-main.js.map": "/static/js/runtime-main.ff8d2d01.js.map",
     "static/js/3.4ba56764.chunk.js": "/static/js/3.4ba56764.chunk.js",
@@ -85,8 +85,9 @@
     "static/media/App.scss": "/static/media/sf-compact-display-thin.613e216f.woff",
     "static/media/GitHub.ee3fbf50.webp": "/static/media/GitHub.ee3fbf50.webp",
     "static/media/Iyzico.6a349551.webp": "/static/media/Iyzico.6a349551.webp",
+    "static/media/JavaScript.7bea7549.webp": "/static/media/JavaScript.7bea7549.webp",
     "static/media/NodeJs.631fe5f6.webp": "/static/media/NodeJs.631fe5f6.webp",
-    "static/media/Redis.80aa79ad.jpg": "/static/media/Redis.80aa79ad.jpg",
+    "static/media/Redis.dcebd759.webp": "/static/media/Redis.dcebd759.webp",
     "static/media/Udemy.b294c6c9.webp": "/static/media/Udemy.b294c6c9.webp",
     "static/media/github-white.ad22d330.png": "/static/media/github-white.ad22d330.png",
     "static/media/github1.746ec8f0.png": "/static/media/github1.746ec8f0.png",
@@ -104,6 +105,6 @@
     "static/js/runtime-main.ff8d2d01.js",
     "static/js/3.4ba56764.chunk.js",
     "static/css/main.9207805e.chunk.css",
-    "static/js/main.f5848ad8.chunk.js"
+    "static/js/main.1e6bdb2d.chunk.js"
   ]
 }
