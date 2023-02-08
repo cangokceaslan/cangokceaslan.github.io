@@ -39,7 +39,7 @@
     "static/css/12.52745285.chunk.css": "/static/css/12.52745285.chunk.css",
     "static/js/12.5a264fee.chunk.js": "/static/js/12.5a264fee.chunk.js",
     "static/js/12.5a264fee.chunk.js.map": "/static/js/12.5a264fee.chunk.js.map",
-    "main.css": "/static/css/main.f64f8f97.chunk.css",
+    "main.css": "/static/css/main.d3c649db.chunk.css",
     "main.js": "/static/js/main.b1530aca.chunk.js",
     "main.js.map": "/static/js/main.b1530aca.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.66443eb6.js",
@@ -94,7 +94,7 @@
     "static/css/7.58d14bd8.chunk.css.map": "/static/css/7.58d14bd8.chunk.css.map",
     "static/css/8.58d14bd8.chunk.css.map": "/static/css/8.58d14bd8.chunk.css.map",
     "static/css/9.0ab97366.chunk.css.map": "/static/css/9.0ab97366.chunk.css.map",
-    "static/css/main.f64f8f97.chunk.css.map": "/static/css/main.f64f8f97.chunk.css.map",
+    "static/css/main.d3c649db.chunk.css.map": "/static/css/main.d3c649db.chunk.css.map",
     "static/js/15.ccdaa0e0.chunk.js.LICENSE.txt": "/static/js/15.ccdaa0e0.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/sf-compact-display-thin.613e216f.woff",
     "static/media/GitHub.ee3fbf50.webp": "/static/media/GitHub.ee3fbf50.webp",
@@ -120,7 +120,7 @@
   "entrypoints": [
     "static/js/runtime-main.66443eb6.js",
     "static/js/15.ccdaa0e0.chunk.js",
-    "static/css/main.f64f8f97.chunk.css",
+    "static/css/main.d3c649db.chunk.css",
     "static/js/main.b1530aca.chunk.js"
   ]
 }
