@@ -1,1 +1,0 @@
-# cangokceaslan.github.io
